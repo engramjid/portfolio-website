@@ -48,11 +48,10 @@ export function Footer() {
       </div>
 
       <div className="border-border/60 border-t">
-        <div className="section-container text-muted-foreground flex flex-col items-center justify-between gap-2 py-5 text-xs sm:flex-row">
+        <div className="section-container text-muted-foreground flex items-center justify-center gap-2 py-5 text-xs">
           <p>
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
-          <p>Built with Next.js, TypeScript &amp; Tailwind CSS.</p>
         </div>
       </div>
     </footer>
