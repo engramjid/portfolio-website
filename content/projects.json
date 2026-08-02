@@ -1,0 +1,81 @@
+{
+  "projects": [
+    {
+      "slug": "churn-prediction-engine",
+      "title": "Customer Churn Prediction Engine",
+      "description": "A production ML pipeline that scores subscription customers daily and flags at-risk accounts for the retention team.",
+      "problem": "The company was losing ~9% of subscribers monthly with no early-warning system, so retention outreach was reactive and untargeted.",
+      "solution": "Built a gradient-boosted ensemble on 40+ behavioral features, deployed behind a FastAPI service with a nightly Airflow scoring job and a Power BI dashboard for the retention team.",
+      "impact": "Reduced monthly churn by 23% within two quarters and lifted retention-campaign conversion by 3.1x versus the prior blanket-outreach approach.",
+      "image": "/images/projects/churn-prediction.svg",
+      "categories": ["machine-learning", "analytics"],
+      "techStack": ["Python", "Scikit-learn", "Airflow", "FastAPI", "Power BI", "Snowflake"],
+      "githubUrl": "https://github.com/octocat/churn-prediction-engine",
+      "demoUrl": "https://example.com/demo/churn",
+      "featured": true
+    },
+    {
+      "slug": "realtime-clickstream-pipeline",
+      "title": "Real-Time Clickstream Pipeline",
+      "description": "Event-driven pipeline that ingests, transforms, and serves clickstream data for product analytics in near real time.",
+      "problem": "Product teams waited up to 24 hours for clickstream data to land in the warehouse, making experiment monitoring effectively next-day.",
+      "solution": "Designed a Kafka-to-Spark Structured Streaming pipeline landing curated tables in Databricks, orchestrated with dbt for transformation and tested with Great Expectations.",
+      "impact": "Cut data latency from 24 hours to under 3 minutes, enabling same-day experiment decisions and unblocking two A/B tests per sprint on average.",
+      "image": "/images/projects/clickstream-pipeline.svg",
+      "categories": ["data-engineering"],
+      "techStack": ["Kafka", "Spark", "Databricks", "dbt", "Python", "AWS"],
+      "githubUrl": "https://github.com/octocat/realtime-clickstream-pipeline",
+      "featured": true
+    },
+    {
+      "slug": "demand-forecasting-suite",
+      "title": "Demand Forecasting Suite",
+      "description": "A hierarchical forecasting system for SKU-level demand across 300+ retail locations.",
+      "problem": "Manual, spreadsheet-based forecasting led to chronic overstock in slow-moving SKUs and stockouts in high-velocity ones.",
+      "solution": "Implemented hierarchical time-series forecasting (Prophet + LightGBM ensemble) with automatic reconciliation across store/region/national levels, scheduled via Airflow and surfaced in Tableau.",
+      "impact": "Reduced forecast error (MAPE) from 34% to 12% and cut excess inventory carrying costs by an estimated $1.2M annually.",
+      "image": "/images/projects/demand-forecasting.svg",
+      "categories": ["machine-learning", "analytics"],
+      "techStack": ["Python", "Prophet", "LightGBM", "Airflow", "Tableau", "PostgreSQL"],
+      "githubUrl": "https://github.com/octocat/demand-forecasting-suite",
+      "demoUrl": "https://example.com/demo/forecasting"
+    },
+    {
+      "slug": "support-ticket-nlp-router",
+      "title": "Support Ticket NLP Router",
+      "description": "An NLP classifier that automatically triages and routes inbound support tickets to the correct team.",
+      "problem": "Support tickets were manually triaged, adding an average of 6 hours to first-response time and misrouting roughly 1 in 5 tickets.",
+      "solution": "Fine-tuned a transformer-based text classifier on 80k historical tickets, deployed as a microservice integrated with the ticketing system's webhook, with a human-in-the-loop review queue for low-confidence predictions.",
+      "impact": "Cut first-response time by 71% and reduced misrouted tickets from 21% to 4%.",
+      "image": "/images/projects/support-nlp-router.svg",
+      "categories": ["nlp", "machine-learning"],
+      "techStack": ["Python", "PyTorch", "Hugging Face", "Docker", "AWS", "FastAPI"],
+      "githubUrl": "https://github.com/octocat/support-ticket-nlp-router",
+      "featured": true
+    },
+    {
+      "slug": "executive-kpi-dashboard",
+      "title": "Executive KPI Dashboard",
+      "description": "A unified executive dashboard consolidating revenue, growth, and operational metrics from six source systems.",
+      "problem": "Leadership pulled numbers from six disconnected tools before every board meeting, and figures frequently disagreed across teams.",
+      "solution": "Built a dbt-modeled semantic layer on Snowflake as the single source of truth, with a Power BI dashboard refreshed hourly and row-level security by department.",
+      "impact": "Eliminated reporting discrepancies entirely and cut board-prep time from ~2 days to under 2 hours per cycle.",
+      "image": "/images/projects/executive-dashboard.svg",
+      "categories": ["visualization", "analytics"],
+      "techStack": ["dbt", "Snowflake", "Power BI", "SQL", "Azure"],
+      "demoUrl": "https://example.com/demo/executive-kpi"
+    },
+    {
+      "slug": "anomaly-detection-iot",
+      "title": "IoT Sensor Anomaly Detection",
+      "description": "An unsupervised anomaly detection system for predictive maintenance on industrial IoT sensor streams.",
+      "problem": "Unplanned equipment downtime cost the plant an estimated $40k per incident, with failures typically caught only after breakdown.",
+      "solution": "Trained an autoencoder-based anomaly detector on multivariate sensor telemetry, streamed through Kafka with alerts pushed to the maintenance team via a Grafana-backed monitoring stack.",
+      "impact": "Enabled predictive maintenance that reduced unplanned downtime by 34% in the first year of deployment.",
+      "image": "/images/projects/anomaly-detection.svg",
+      "categories": ["machine-learning", "data-engineering"],
+      "techStack": ["Python", "TensorFlow", "Kafka", "Grafana", "GCP"],
+      "githubUrl": "https://github.com/octocat/anomaly-detection-iot"
+    }
+  ]
+}

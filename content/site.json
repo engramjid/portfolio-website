@@ -1,0 +1,27 @@
+{
+  "name": "Amjid Hussain",
+  "title": "Amjid Hussain — Data Scientist & Analytics Engineer",
+  "role": "Senior Data Scientist",
+  "tagline": "I turn messy data into decisions that ship.",
+  "description": "Senior Data Scientist and Analytics Engineer specializing in machine learning, data pipelines, and business intelligence. I build end-to-end systems that turn raw data into measurable impact.",
+  "url": "https://amjidhussain-portfolio.vercel.app",
+  "email": "amjidmir786@gmail.com",
+  "location": "Austin, Texas, USA",
+  "keywords": [
+    "Data Scientist",
+    "Machine Learning Engineer",
+    "Data Engineer",
+    "Analytics Engineer",
+    "Python",
+    "SQL",
+    "Portfolio"
+  ],
+  "githubUsername": "octocat",
+  "typingWords": ["Data Scientist", "ML Engineer", "Analytics Engineer", "Data Storyteller"],
+  "stats": [
+    { "label": "Years of Experience", "value": 7, "suffix": "+" },
+    { "label": "Projects Shipped", "value": 42, "suffix": "+" },
+    { "label": "Models in Production", "value": 15, "suffix": "+" },
+    { "label": "Data Processed", "value": 8, "suffix": "TB+" }
+  ]
+}

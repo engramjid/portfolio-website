@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "programming",
+      "title": "Programming",
+      "description": "Core languages for analysis, modeling, and automation.",
+      "skills": [
+        { "name": "Python", "level": "expert" },
+        { "name": "SQL", "level": "expert" },
+        { "name": "R", "level": "advanced" },
+        { "name": "JavaScript", "level": "proficient" }
+      ]
+    },
+    {
+      "id": "frameworks",
+      "title": "Frameworks & Libraries",
+      "description": "Toolkits for data manipulation, ML, and deep learning.",
+      "skills": [
+        { "name": "Pandas", "level": "expert" },
+        { "name": "NumPy", "level": "expert" },
+        { "name": "Scikit-learn", "level": "advanced" },
+        { "name": "TensorFlow", "level": "advanced" },
+        { "name": "PyTorch", "level": "proficient" },
+        { "name": "Spark", "level": "proficient" }
+      ]
+    },
+    {
+      "id": "visualization",
+      "title": "Visualization",
+      "description": "Turning numbers into narratives stakeholders act on.",
+      "skills": [
+        { "name": "Power BI", "level": "expert" },
+        { "name": "Tableau", "level": "advanced" },
+        { "name": "Plotly", "level": "advanced" },
+        { "name": "Matplotlib", "level": "expert" }
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": "Cloud & Platforms",
+      "description": "Deploying and scaling data systems in the cloud.",
+      "skills": [
+        { "name": "AWS", "level": "advanced" },
+        { "name": "Azure", "level": "advanced" },
+        { "name": "GCP", "level": "proficient" },
+        { "name": "Databricks", "level": "advanced" },
+        { "name": "Snowflake", "level": "advanced" }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools & Workflow",
+      "description": "The engineering backbone behind reliable data products.",
+      "skills": [
+        { "name": "Docker", "level": "advanced" },
+        { "name": "Git", "level": "expert" },
+        { "name": "GitHub", "level": "expert" },
+        { "name": "Airflow", "level": "advanced" },
+        { "name": "dbt", "level": "advanced" },
+        { "name": "Linux", "level": "proficient" }
+      ]
+    }
+  ]
+}

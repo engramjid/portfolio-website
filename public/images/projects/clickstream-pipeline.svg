@@ -1,0 +1,25 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Real-time clickstream pipeline cover">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g2)" />
+  <g stroke="#F8FAFC" stroke-opacity="0.35" stroke-width="2">
+    <line x1="120" y1="120" x2="320" y2="220" />
+    <line x1="320" y1="220" x2="560" y2="140" />
+    <line x1="320" y1="220" x2="480" y2="360" />
+    <line x1="560" y1="140" x2="700" y2="260" />
+    <line x1="480" y1="360" x2="700" y2="260" />
+  </g>
+  <g fill="#2563EB" stroke="#F8FAFC" stroke-width="2">
+    <circle cx="120" cy="120" r="14" />
+    <circle cx="320" cy="220" r="18" />
+    <circle cx="560" cy="140" r="14" />
+    <circle cx="480" cy="360" r="14" />
+    <circle cx="700" cy="260" r="16" fill="#8B5CF6" />
+  </g>
+  <rect x="40" y="40" width="140" height="34" rx="17" fill="#ffffff" fill-opacity="0.12" />
+  <text x="60" y="63" font-family="Arial, sans-serif" font-size="15" fill="#F8FAFC" font-weight="600">Data Engineering</text>
+</svg>

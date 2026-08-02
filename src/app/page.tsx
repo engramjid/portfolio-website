@@ -1,0 +1,27 @@
+import { Hero } from "@/components/sections/hero";
+import { About } from "@/components/sections/about";
+import { Skills } from "@/components/sections/skills";
+import { Projects } from "@/components/sections/projects";
+import { DashboardShowcase } from "@/components/sections/dashboard-showcase";
+import { Experience } from "@/components/sections/experience";
+import { Education } from "@/components/sections/education";
+import { GithubStats } from "@/components/sections/github-stats";
+import { BlogPreview } from "@/components/sections/blog-preview";
+import { Contact } from "@/components/sections/contact";
+
+export default function HomePage() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <DashboardShowcase />
+      <Experience />
+      <Education />
+      <GithubStats />
+      <BlogPreview />
+      <Contact />
+    </>
+  );
+}

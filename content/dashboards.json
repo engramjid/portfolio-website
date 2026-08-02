@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "id": "power-bi-sales",
+      "title": "Global Sales Performance",
+      "description": "Interactive Power BI report tracking revenue, margin, and regional performance across business units.",
+      "platform": "power-bi",
+      "embedUrl": "https://app.powerbi.com/view?r=YOUR_POWER_BI_EMBED_ID",
+      "aspectRatio": "16/9"
+    },
+    {
+      "id": "tableau-retention",
+      "title": "Customer Retention Cohorts",
+      "description": "Tableau public dashboard visualizing cohort retention curves and churn drivers by segment.",
+      "platform": "tableau",
+      "embedUrl": "https://public.tableau.com/views/YOUR_WORKBOOK/YOUR_VIEW?:embed=y",
+      "aspectRatio": "16/9"
+    },
+    {
+      "id": "looker-marketing",
+      "title": "Marketing Funnel Analytics",
+      "description": "Looker Studio report covering acquisition channels, funnel conversion, and CAC/LTV by campaign.",
+      "platform": "looker-studio",
+      "embedUrl": "https://lookerstudio.google.com/embed/reporting/YOUR_REPORT_ID/page/YOUR_PAGE_ID",
+      "aspectRatio": "4/3"
+    },
+    {
+      "id": "kaggle-notebook",
+      "title": "Exploratory Data Analysis Notebook",
+      "description": "Kaggle notebook walking through EDA and feature engineering for the churn prediction project.",
+      "platform": "kaggle",
+      "embedUrl": "https://www.kaggle.com/embed/alexmorgan/churn-eda-notebook",
+      "aspectRatio": "4/3"
+    }
+  ]
+}

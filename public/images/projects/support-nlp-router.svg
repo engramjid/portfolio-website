@@ -1,0 +1,23 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Support ticket NLP router cover">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g4)" />
+  <g fill="none" stroke="#F8FAFC" stroke-opacity="0.4" stroke-width="2">
+    <rect x="90" y="90" width="220" height="120" rx="14" />
+    <rect x="90" y="250" width="220" height="120" rx="14" />
+    <rect x="490" y="170" width="220" height="120" rx="14" />
+  </g>
+  <path d="M310 150 L 490 210" stroke="#06B6D4" stroke-width="3" />
+  <path d="M310 310 L 490 250" stroke="#8B5CF6" stroke-width="3" />
+  <g fill="#F8FAFC">
+    <circle cx="130" cy="130" r="5" />
+    <circle cx="130" cy="290" r="5" />
+    <circle cx="530" cy="210" r="5" />
+  </g>
+  <rect x="40" y="40" width="60" height="34" rx="17" fill="#ffffff" fill-opacity="0.12" />
+  <text x="58" y="63" font-family="Arial, sans-serif" font-size="15" fill="#F8FAFC" font-weight="600">NLP</text>
+</svg>

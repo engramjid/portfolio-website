@@ -1,0 +1,62 @@
+{
+  "entries": [
+    {
+      "id": "senior-data-scientist",
+      "role": "Senior Data Scientist",
+      "company": "Northwind Analytics",
+      "companyUrl": "https://example.com",
+      "location": "Austin, TX (Remote)",
+      "startDate": "2023",
+      "endDate": "Present",
+      "responsibilities": [
+        "Lead a team of 3 data scientists building ML products for retention, forecasting, and pricing.",
+        "Own the end-to-end ML lifecycle from problem framing to production deployment and monitoring.",
+        "Partner directly with product and executive stakeholders to translate business goals into measurable models."
+      ],
+      "achievements": [
+        "Reduced customer churn by 23% via a production churn-scoring engine.",
+        "Cut board-reporting prep time from 2 days to under 2 hours with a unified KPI dashboard.",
+        "Mentored 2 junior analysts into data scientist roles."
+      ],
+      "technologies": ["Python", "Scikit-learn", "Airflow", "Snowflake", "Power BI", "AWS"]
+    },
+    {
+      "id": "data-scientist",
+      "role": "Data Scientist",
+      "company": "BrightPath Retail",
+      "companyUrl": "https://example.com",
+      "location": "Chicago, IL",
+      "startDate": "2021",
+      "endDate": "2023",
+      "responsibilities": [
+        "Built demand forecasting models across 300+ store locations for inventory planning.",
+        "Designed and maintained ELT pipelines feeding the analytics warehouse.",
+        "Ran quarterly A/B tests for merchandising and pricing experiments."
+      ],
+      "achievements": [
+        "Improved forecast accuracy (MAPE) from 34% to 12%, saving an estimated $1.2M annually in carrying costs.",
+        "Automated a previously 15-hour manual reporting workflow down to a 20-minute pipeline."
+      ],
+      "technologies": ["Python", "Prophet", "LightGBM", "dbt", "PostgreSQL", "Tableau"]
+    },
+    {
+      "id": "data-analyst",
+      "role": "Data Analyst",
+      "company": "Lumen Insights",
+      "companyUrl": "https://example.com",
+      "location": "Denver, CO",
+      "startDate": "2019",
+      "endDate": "2021",
+      "responsibilities": [
+        "Delivered weekly and monthly reporting for marketing and operations stakeholders.",
+        "Built self-serve dashboards to reduce ad-hoc reporting requests.",
+        "Performed cohort, funnel, and segmentation analysis to guide campaign strategy."
+      ],
+      "achievements": [
+        "Reduced ad-hoc reporting requests by 60% after launching self-serve dashboards.",
+        "Identified a segmentation insight that lifted email campaign conversion by 18%."
+      ],
+      "technologies": ["SQL", "Python", "Power BI", "Excel", "Google Analytics"]
+    }
+  ]
+}

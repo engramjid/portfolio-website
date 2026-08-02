@@ -1,0 +1,15 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Feature store blog cover">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)" />
+  <g fill="#F8FAFC" fill-opacity="0.14">
+    <rect x="80" y="90" width="150" height="270" rx="18" />
+    <rect x="260" y="140" width="150" height="220" rx="18" />
+    <rect x="440" y="70" width="150" height="290" rx="18" />
+    <rect x="620" y="160" width="120" height="200" rx="18" />
+  </g>
+</svg>

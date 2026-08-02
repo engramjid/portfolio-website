@@ -1,0 +1,127 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2293 >>
+stream
+BT
+/F2 20 Tf
+1 0 0 1 56 770 Tm
+(Amjid Hussain) Tj
+/F1 12 Tf
+1 0 0 1 56 744 Tm
+(Senior Data Scientist & Analytics Engineer) Tj
+/F1 9 Tf
+1 0 0 1 56 726 Tm
+(Austin, TX  |  amjidmir786@gmail.com  |  github.com/amjidhussain  |  linkedin.com/in/amjidhussain) Tj
+/F1 6 Tf
+1 0 0 1 56 711 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 56 699 Tm
+(SUMMARY) Tj
+/F1 10 Tf
+1 0 0 1 56 681 Tm
+(Senior Data Scientist with 7+ years building production ML systems, data pipelines,) Tj
+/F1 10 Tf
+1 0 0 1 56 665 Tm
+(and BI platforms that turn raw data into measurable business decisions.) Tj
+/F1 6 Tf
+1 0 0 1 56 649 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 56 637 Tm
+(EXPERIENCE) Tj
+/F2 10 Tf
+1 0 0 1 56 619 Tm
+(Senior Data Scientist -- Northwind Analytics \(2023 - Present\)) Tj
+/F1 9 Tf
+1 0 0 1 56 603 Tm
+(- Led ML products for retention, forecasting, and pricing; reduced churn by 23%.) Tj
+/F1 9 Tf
+1 0 0 1 56 588 Tm
+(- Built a unified KPI dashboard, cutting board-reporting prep from 2 days to 2 hours.) Tj
+/F1 4 Tf
+1 0 0 1 56 573 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 56 563 Tm
+(Data Scientist -- BrightPath Retail \(2021 - 2023\)) Tj
+/F1 9 Tf
+1 0 0 1 56 547 Tm
+(- Built hierarchical demand forecasting across 300+ stores; MAPE 34% -> 12%.) Tj
+/F1 9 Tf
+1 0 0 1 56 532 Tm
+(- Designed ELT pipelines feeding the analytics warehouse.) Tj
+/F1 4 Tf
+1 0 0 1 56 517 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 56 507 Tm
+(Data Analyst -- Lumen Insights \(2019 - 2021\)) Tj
+/F1 9 Tf
+1 0 0 1 56 491 Tm
+(- Delivered self-serve dashboards, cutting ad-hoc reporting requests by 60%.) Tj
+/F1 6 Tf
+1 0 0 1 56 476 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 56 464 Tm
+(EDUCATION) Tj
+/F1 10 Tf
+1 0 0 1 56 446 Tm
+(M.S. Data Science, University of Texas at Austin \(2017 - 2019\)) Tj
+/F1 10 Tf
+1 0 0 1 56 430 Tm
+(B.S. Statistics & Computer Science, University of Wisconsin-Madison \(2013 - 2017\)) Tj
+/F1 6 Tf
+1 0 0 1 56 414 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 56 402 Tm
+(SKILLS) Tj
+/F1 10 Tf
+1 0 0 1 56 384 Tm
+(Python, SQL, R, Pandas, Scikit-learn, TensorFlow, PyTorch, Spark, Power BI, Tableau,) Tj
+/F1 10 Tf
+1 0 0 1 56 368 Tm
+(AWS, Azure, GCP, Databricks, Snowflake, Docker, Airflow, dbt) Tj
+/F1 10 Tf
+1 0 0 1 56 352 Tm
+() Tj
+/F1 8 Tf
+1 0 0 1 56 336 Tm
+(This is placeholder resume content generated for a portfolio template.) Tj
+/F1 8 Tf
+1 0 0 1 56 322 Tm
+(Replace public/resume.pdf with your real resume.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000002595 00000 n 
+0000002665 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2740
+%%EOF

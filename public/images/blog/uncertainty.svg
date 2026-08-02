@@ -1,0 +1,11 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Communicating model uncertainty blog cover">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)" />
+  <path d="M60 300 C 220 220, 300 220, 400 240 S 600 260, 740 200" fill="none" stroke="#F8FAFC" stroke-width="3" opacity="0.9" />
+  <path d="M60 340 C 220 280, 300 280, 400 300 S 600 320, 740 260 L 740 140 C 600 200, 500 180, 400 180 S 220 160, 60 220 Z" fill="#06B6D4" opacity="0.18" />
+</svg>

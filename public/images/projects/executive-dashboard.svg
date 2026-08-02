@@ -1,0 +1,19 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Executive KPI dashboard cover">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g5)" />
+  <g fill="#F8FAFC" fill-opacity="0.12">
+    <rect x="60" y="80" width="330" height="150" rx="16" />
+    <rect x="410" y="80" width="330" height="150" rx="16" />
+    <rect x="60" y="250" width="330" height="170" rx="16" />
+    <rect x="410" y="250" width="330" height="170" rx="16" />
+  </g>
+  <path d="M80 200 L 140 170 L 200 190 L 260 140 L 320 160" fill="none" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round" />
+  <circle cx="575" cy="155" r="60" fill="none" stroke="#2563EB" stroke-width="14" stroke-dasharray="220 377" stroke-linecap="round" />
+  <rect x="40" y="40" width="120" height="34" rx="17" fill="#ffffff" fill-opacity="0.12" />
+  <text x="58" y="63" font-family="Arial, sans-serif" font-size="15" fill="#F8FAFC" font-weight="600">Visualization</text>
+</svg>

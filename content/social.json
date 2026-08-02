@@ -1,0 +1,9 @@
+{
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/amjidhussain", "icon": "github" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/amjidhussain", "icon": "linkedin" },
+    { "label": "Email", "url": "mailto:amjidmir786@gmail.com", "icon": "email" },
+    { "label": "Kaggle", "url": "https://kaggle.com/amjidhussain", "icon": "kaggle" },
+    { "label": "Medium", "url": "https://medium.com/@amjidhussain", "icon": "medium" }
+  ]
+}

@@ -1,0 +1,22 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Customer churn prediction engine cover">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g1)" />
+  <g opacity="0.55" stroke="#8B5CF6" stroke-width="2" fill="none">
+    <path d="M40 380 C 180 300, 260 420, 400 320 S 620 200, 760 260" />
+  </g>
+  <g opacity="0.9" stroke="#06B6D4" stroke-width="3" fill="none">
+    <path d="M40 340 C 180 260, 260 380, 400 260 S 620 140, 760 190" />
+  </g>
+  <g fill="#F8FAFC">
+    <circle cx="400" cy="260" r="6" />
+    <circle cx="620" cy="140" r="6" />
+    <circle cx="760" cy="190" r="6" />
+  </g>
+  <rect x="40" y="40" width="150" height="34" rx="17" fill="#ffffff" fill-opacity="0.12" />
+  <text x="60" y="63" font-family="Arial, sans-serif" font-size="15" fill="#F8FAFC" font-weight="600">Machine Learning</text>
+</svg>

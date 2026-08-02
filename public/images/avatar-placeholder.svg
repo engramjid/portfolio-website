@@ -1,0 +1,18 @@
+<svg width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Professional photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="640" height="640" rx="48" fill="url(#bg)" />
+  <rect width="640" height="640" rx="48" fill="url(#glow)" />
+  <circle cx="320" cy="255" r="110" fill="#ffffff" fill-opacity="0.16" />
+  <path d="M320 400c-115 0-190 65-190 140v20a20 20 0 0020 20h340a20 20 0 0020-20v-20c0-75-75-140-190-140z" fill="#ffffff" fill-opacity="0.16" />
+  <text x="320" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="88" font-weight="700" fill="#ffffff">AH</text>
+</svg>
