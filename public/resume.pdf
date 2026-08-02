@@ -3,125 +3,266 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2293 >>
+<< /Length 4819 >>
 stream
 BT
 /F2 20 Tf
 1 0 0 1 56 770 Tm
-(Amjid Hussain) Tj
-/F1 12 Tf
-1 0 0 1 56 744 Tm
-(Senior Data Scientist & Analytics Engineer) Tj
+(AMJID HUSSAIN) Tj
+/F1 11 Tf
+1 0 0 1 56 745 Tm
+(Analytics Engineer  |  Power BI PL-300  |  SQL & SAP Integration  |  Healthcare & Enterprise BI) Tj
 /F1 9 Tf
-1 0 0 1 56 726 Tm
-(Austin, TX  |  amjidmir786@gmail.com  |  github.com/amjidhussain  |  linkedin.com/in/amjidhussain) Tj
-/F1 6 Tf
-1 0 0 1 56 711 Tm
-() Tj
-/F2 12 Tf
-1 0 0 1 56 699 Tm
-(SUMMARY) Tj
+1 0 0 1 56 729 Tm
+(Islamabad, Pakistan  |  amjidmir786@gmail.com  |  +92-332-9061374) Tj
+/F1 9 Tf
+1 0 0 1 56 715 Tm
+(linkedin.com/in/amjid-hussain-ab55a413b  |  Open to relocation for the right opportunity) Tj
+/F2 13 Tf
+1 0 0 1 56 688 Tm
+(PROFESSIONAL SUMMARY) Tj
 /F1 10 Tf
-1 0 0 1 56 681 Tm
-(Senior Data Scientist with 7+ years building production ML systems, data pipelines,) Tj
+1 0 0 1 56 670 Tm
+(Analytics Engineer with 8+ years delivering enterprise BI solutions across healthcare, PMO, and) Tj
 /F1 10 Tf
-1 0 0 1 56 665 Tm
-(and BI platforms that turn raw data into measurable business decisions.) Tj
-/F1 6 Tf
-1 0 0 1 56 649 Tm
-() Tj
-/F2 12 Tf
-1 0 0 1 56 637 Tm
-(EXPERIENCE) Tj
+1 0 0 1 56 655 Tm
+(multi-sector operations. Built 50+ Power BI dashboards serving 20+ departments. Expert in Power BI) Tj
+/F1 10 Tf
+1 0 0 1 56 640 Tm
+(\(PL-300 certified\), star schema modeling, Oracle SQL/PL-SQL, and live SAP/ERP integration. Designed a) Tj
+/F1 10 Tf
+1 0 0 1 56 625 Tm
+(PKR 5.73 billion PMO dashboard tracking 372 active projects with KPI governance across 13 strategic) Tj
+/F1 10 Tf
+1 0 0 1 56 610 Tm
+(objectives. Reduced executive reporting from 20 hours/month to 6 hours through automated ETL pipelines.) Tj
+/F2 13 Tf
+1 0 0 1 56 582 Tm
+(FLAGSHIP PROJECT: PMO CAPITAL PORTFOLIO DASHBOARD) Tj
 /F2 10 Tf
-1 0 0 1 56 619 Tm
-(Senior Data Scientist -- Northwind Analytics \(2023 - Present\)) Tj
+1 0 0 1 56 564 Tm
+(SAP-Integrated Power BI Dashboard -- Riphah International University \(IIMCT\)) Tj
 /F1 9 Tf
-1 0 0 1 56 603 Tm
-(- Led ML products for retention, forecasting, and pricing; reduced churn by 23%.) Tj
+1 0 0 1 56 549 Tm
+(- Architected a live Power BI dashboard tracking PKR 5.73B capital portfolio across 372 active projects,) Tj
 /F1 9 Tf
-1 0 0 1 56 588 Tm
-(- Built a unified KPI dashboard, cutting board-reporting prep from 2 days to 2 hours.) Tj
-/F1 4 Tf
-1 0 0 1 56 573 Tm
-() Tj
-/F2 10 Tf
-1 0 0 1 56 563 Tm
-(Data Scientist -- BrightPath Retail \(2021 - 2023\)) Tj
+1 0 0 1 56 535 Tm
+(  integrating SAP ERP at WBS/PO granularity with Smartsheet and Oracle HIMS) Tj
 /F1 9 Tf
-1 0 0 1 56 547 Tm
-(- Built hierarchical demand forecasting across 300+ stores; MAPE 34% -> 12%.) Tj
+1 0 0 1 56 521 Tm
+(- Designed KPI governance framework across 13 strategic objectives covering 20+ KPI metrics, with) Tj
 /F1 9 Tf
-1 0 0 1 56 532 Tm
-(- Designed ELT pipelines feeding the analytics warehouse.) Tj
-/F1 4 Tf
-1 0 0 1 56 517 Tm
-() Tj
-/F2 10 Tf
 1 0 0 1 56 507 Tm
-(Data Analyst -- Lumen Insights \(2019 - 2021\)) Tj
+(  monthly variance analysis and >=80% management adoption) Tj
 /F1 9 Tf
-1 0 0 1 56 491 Tm
-(- Delivered self-serve dashboards, cutting ad-hoc reporting requests by 60%.) Tj
-/F1 6 Tf
-1 0 0 1 56 476 Tm
-() Tj
-/F2 12 Tf
-1 0 0 1 56 464 Tm
-(EDUCATION) Tj
-/F1 10 Tf
-1 0 0 1 56 446 Tm
-(M.S. Data Science, University of Texas at Austin \(2017 - 2019\)) Tj
-/F1 10 Tf
-1 0 0 1 56 430 Tm
-(B.S. Statistics & Computer Science, University of Wisconsin-Madison \(2013 - 2017\)) Tj
-/F1 6 Tf
-1 0 0 1 56 414 Tm
-() Tj
-/F2 12 Tf
-1 0 0 1 56 402 Tm
-(SKILLS) Tj
-/F1 10 Tf
-1 0 0 1 56 384 Tm
-(Python, SQL, R, Pandas, Scikit-learn, TensorFlow, PyTorch, Spark, Power BI, Tableau,) Tj
-/F1 10 Tf
-1 0 0 1 56 368 Tm
-(AWS, Azure, GCP, Databricks, Snowflake, Docker, Airflow, dbt) Tj
-/F1 10 Tf
-1 0 0 1 56 352 Tm
-() Tj
-/F1 8 Tf
-1 0 0 1 56 336 Tm
-(This is placeholder resume content generated for a portfolio template.) Tj
-/F1 8 Tf
-1 0 0 1 56 322 Tm
-(Replace public/resume.pdf with your real resume.) Tj
+1 0 0 1 56 493 Tm
+(- Built star schema data model combining SAP ERP, Smartsheet, and Oracle HIMS via API -- single source) Tj
+/F1 9 Tf
+1 0 0 1 56 479 Tm
+(  of truth with >=97% data accuracy target) Tj
+/F1 9 Tf
+1 0 0 1 56 465 Tm
+(- Reduced monthly KPI reporting from ~20 hours to 6 hours through automated Power BI ETL pipelines --) Tj
+/F1 9 Tf
+1 0 0 1 56 451 Tm
+(  a 70% reduction in reporting time) Tj
+/F2 13 Tf
+1 0 0 1 56 424 Tm
+(PROFESSIONAL EXPERIENCE) Tj
+/F2 10 Tf
+1 0 0 1 56 406 Tm
+(Deputy Manager -- Analytics & BI \(HIMS Domain\)  |  Riphah International University \(IIMCT\)) Tj
+/F1 9 Tf
+1 0 0 1 56 391 Tm
+(May 2024 - Present  |  Islamabad, Pakistan) Tj
+/F1 9 Tf
+1 0 0 1 56 377 Tm
+(- Lead the analytics function delivering 13 strategic KPI objectives with >=80% dashboard adoption) Tj
+/F1 9 Tf
+1 0 0 1 56 363 Tm
+(- Built hospital-wide KPI dashboard tracking 20+ clinical, operational, and administrative KPIs) Tj
+/F1 9 Tf
+1 0 0 1 56 349 Tm
+(- Designed departmental dashboards \(RHS, Pharmacy, FMSD\) reducing manual reporting by >=30%) Tj
+/F1 9 Tf
+1 0 0 1 56 335 Tm
+(- Integrated SAP ERP, Smartsheet API, and Oracle HIMS pipelines; automated weekly executive reports) Tj
+/F1 9 Tf
+1 0 0 1 56 321 Tm
+(- Converted RHS Revenue Dashboard to Looker Studio with automated refresh) Tj
+/F2 10 Tf
+1 0 0 1 56 297 Tm
+(Assistant Manager & Data Analytics Consultant  |  NovaGlobal Solutions) Tj
+/F1 9 Tf
+1 0 0 1 56 282 Tm
+(Sep 2022 - Apr 2024  |  Islamabad, Pakistan) Tj
+/F1 9 Tf
+1 0 0 1 56 268 Tm
+(- Led EMR implementation across 14+ departments \(OPD, IPD, Lab, Radiology, Pharmacy, Billing\)) Tj
+/F1 9 Tf
+1 0 0 1 56 254 Tm
+(- Trained 500+ end users, achieving full system adoption across clinical and administrative departments) Tj
+/F1 9 Tf
+1 0 0 1 56 240 Tm
+(- Designed KPI dashboards for management and quality departments) Tj
+/F1 9 Tf
+1 0 0 1 56 226 Tm
+(- Assisted with LIS/LAS and PACS integrations, UAT, and post-implementation support) Tj
+/F2 10 Tf
+1 0 0 1 56 202 Tm
+(Senior Data Analyst & BI Developer  |  Pakistan Ordnance Factories \(POF\)) Tj
+/F1 9 Tf
+1 0 0 1 56 187 Tm
+(Jul 2020 - Aug 2022  |  Wah Cantt, Pakistan) Tj
+/F1 9 Tf
+1 0 0 1 56 173 Tm
+(- Integrated live Power BI dashboards with ERP APIs enabling 5-minute automated refresh) Tj
+/F1 9 Tf
+1 0 0 1 56 159 Tm
+(- Delivered daily/monthly/quarterly/annual KPI tracking frameworks across 20+ departments) Tj
+/F1 9 Tf
+1 0 0 1 56 145 Tm
+(- Applied advanced SQL and ETL for multi-source integration, achieving 95%+ KPI accuracy) Tj
+/F2 10 Tf
+1 0 0 1 56 121 Tm
+(Data Analyst & Implementation Lead  |  Pacslink Corporation) Tj
+/F1 9 Tf
+1 0 0 1 56 106 Tm
+(Nov 2018 - Jun 2020  |  Lahore, Pakistan) Tj
+/F1 9 Tf
+1 0 0 1 56 92 Tm
+(- Led HMIS implementation across multiple hospitals, reducing administrative manual effort by 30%) Tj
+/F1 9 Tf
+1 0 0 1 56 78 Tm
+(- Designed and deployed Power BI, Oracle APEX, and Jaspersoft dashboards, cutting reporting time by 40%) Tj
+/F1 9 Tf
+1 0 0 1 56 64 Tm
+(- Gathered requirements, conducted UAT, and reduced reporting errors by 20%) Tj
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
+<< /Length 2676 >>
+stream
+BT
+/F2 10 Tf
+1 0 0 1 56 760 Tm
+(Junior Consultant  |  Pacslink Corporation) Tj
+/F1 9 Tf
+1 0 0 1 56 745 Tm
+(Oct 2017 - Oct 2018  |  Lahore, Pakistan) Tj
+/F1 9 Tf
+1 0 0 1 56 731 Tm
+(- Developed Jaspersoft iReport dashboards embedded in HIMS for real-time reporting) Tj
+/F1 9 Tf
+1 0 0 1 56 717 Tm
+(- Deployed Oracle 11G/APEX and Microsoft infrastructure solutions \(AD, DHCP, WSUS\)) Tj
+/F2 13 Tf
+1 0 0 1 56 690 Tm
+(TECHNICAL SKILLS) Tj
+/F1 9 Tf
+1 0 0 1 56 672 Tm
+(BI & Visualization: Power BI Desktop, Power BI Service, DAX, Power Query M, Jaspersoft iReport, Looker Studio) Tj
+/F1 9 Tf
+1 0 0 1 56 658 Tm
+(Data Modeling: Star Schema, Fact/Dimension Tables, Data Warehousing) Tj
+/F1 9 Tf
+1 0 0 1 56 644 Tm
+(Database & SQL: Oracle SQL, PL-SQL, Oracle APEX, Google BigQuery) Tj
+/F1 9 Tf
+1 0 0 1 56 630 Tm
+(ERP & Integration: SAP ERP \(WBS, Purchase Orders, Project Systems\), Smartsheet API, REST API Integration) Tj
+/F1 9 Tf
+1 0 0 1 56 616 Tm
+(HIMS Domain: Oracle HIMS, EHR/EMR, OPD/IPD, Nursing & Ward Mgmt, OT, Pharmacy, Radiology, LIS/LAS, Billing) Tj
+/F1 9 Tf
+1 0 0 1 56 602 Tm
+(Other: Microsoft Excel, ETL/Data Transformation, Stakeholder Management, KPI Framework Design) Tj
+/F2 13 Tf
+1 0 0 1 56 575 Tm
+(AWARDS) Tj
+/F1 9 Tf
+1 0 0 1 56 557 Tm
+(Performance Excellence Award -- Managing Trustee/Chancellor, IIMCT - Riphah International University) Tj
+/F1 9 Tf
+1 0 0 1 56 543 Tm
+(December 2025) Tj
+/F1 9 Tf
+1 0 0 1 56 529 Tm
+(Excellence in Performance Award -- CEO, Pacslink Corporation  |  January 2020) Tj
+/F2 13 Tf
+1 0 0 1 56 502 Tm
+(PUBLICATIONS) Tj
+/F1 9 Tf
+1 0 0 1 56 484 Tm
+(Neurocognitive Approach for Assessing Visual Engagement in Neuromarketing) Tj
+/F1 9 Tf
+1 0 0 1 56 470 Tm
+(Amjid Hussain  |  December 2024) Tj
+/F2 13 Tf
+1 0 0 1 56 443 Tm
+(CERTIFICATIONS) Tj
+/F1 9 Tf
+1 0 0 1 56 425 Tm
+(Microsoft Power BI Data Analyst \(PL-300\) -- Microsoft  |  2026) Tj
+/F1 9 Tf
+1 0 0 1 56 411 Tm
+(Microsoft Power BI Data Analyst Professional Certificate -- Microsoft / Coursera  |  2025) Tj
+/F1 9 Tf
+1 0 0 1 56 397 Tm
+(Looker Studio - The Practical Masterclass -- Udemy  |  2026) Tj
+/F1 9 Tf
+1 0 0 1 56 383 Tm
+(BigQuery for Big Data Engineers -- Udemy) Tj
+/F1 9 Tf
+1 0 0 1 56 369 Tm
+(Microsoft Power BI Desktop for Business Intelligence -- Maven Analytics) Tj
+/F2 13 Tf
+1 0 0 1 56 342 Tm
+(EDUCATION) Tj
+/F1 9 Tf
+1 0 0 1 56 324 Tm
+(M.Sc. Computer Engineering -- University of Engineering & Technology, Taxila) Tj
+/F1 9 Tf
+1 0 0 1 56 310 Tm
+(Oct 2021 - Apr 2024  |  GPA: 3.9 / 4.0) Tj
+/F1 9 Tf
+1 0 0 1 56 296 Tm
+(B.Sc. Computer Systems Engineering -- Mirpur University of Science & Technology \(MUST\)) Tj
+/F1 9 Tf
+1 0 0 1 56 282 Tm
+(Sep 2013 - Sep 2017  |  GPA: 4.0 / 4.0) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+8 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 xref
-0 7
+0 9
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000115 00000 n 
-0000000251 00000 n 
-0000002595 00000 n 
-0000002665 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000005127 00000 n 
+0000005263 00000 n 
+0000007990 00000 n 
+0000008060 00000 n 
 trailer
-<< /Size 7 /Root 1 0 R >>
+<< /Size 9 /Root 1 0 R >>
 startxref
-2740
+8135
 %%EOF

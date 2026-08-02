@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
+import { FiGithub, FiGlobe, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
 import { SiKaggle, SiMedium } from "react-icons/si";
 
 import type { SocialLink } from "@/types";
@@ -10,6 +10,7 @@ const iconMap: Record<SocialLink["icon"], React.ComponentType<{ className?: stri
   kaggle: SiKaggle,
   medium: SiMedium,
   twitter: FiTwitter,
+  website: FiGlobe,
 };
 
 export function SocialIcon({

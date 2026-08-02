@@ -49,7 +49,7 @@ export function Hero() {
               <TypingEffect words={siteConfig.typingWords} />
             </span>
             <br />
-            systems that ship.
+            that leadership trusts.
           </motion.h1>
 
           <motion.p
@@ -94,9 +94,7 @@ export function Hero() {
             className="text-muted-foreground mt-10 flex items-center gap-2 text-sm"
           >
             <FolderGit2 className="text-brand-secondary size-4" />
-            <span>
-              {siteConfig.location} &middot; Open to select consulting engagements
-            </span>
+            <span>{siteConfig.location} &middot; Open to full-time roles</span>
           </motion.div>
         </div>
 
@@ -121,8 +119,8 @@ export function Hero() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="glass-panel absolute -bottom-6 -left-6 rounded-2xl px-4 py-3"
           >
-            <p className="gradient-text text-2xl font-bold">7+ yrs</p>
-            <p className="text-muted-foreground text-xs">Data &amp; ML experience</p>
+            <p className="gradient-text text-2xl font-bold">8+ yrs</p>
+            <p className="text-muted-foreground text-xs">Enterprise BI experience</p>
           </motion.div>
         </motion.div>
       </div>

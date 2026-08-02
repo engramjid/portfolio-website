@@ -1,36 +1,20 @@
 {
   "embeds": [
     {
-      "id": "power-bi-sales",
-      "title": "Global Sales Performance",
-      "description": "Interactive Power BI report tracking revenue, margin, and regional performance across business units.",
+      "id": "power-bi-pmo-portfolio",
+      "title": "PMO Capital Portfolio Dashboard",
+      "description": "Power BI report tracking a PKR 5.73B capital portfolio across 372 active projects, integrating SAP ERP, Smartsheet, and Oracle HIMS.",
       "platform": "power-bi",
       "embedUrl": "https://app.powerbi.com/view?r=YOUR_POWER_BI_EMBED_ID",
       "aspectRatio": "16/9"
     },
     {
-      "id": "tableau-retention",
-      "title": "Customer Retention Cohorts",
-      "description": "Tableau public dashboard visualizing cohort retention curves and churn drivers by segment.",
-      "platform": "tableau",
-      "embedUrl": "https://public.tableau.com/views/YOUR_WORKBOOK/YOUR_VIEW?:embed=y",
-      "aspectRatio": "16/9"
-    },
-    {
-      "id": "looker-marketing",
-      "title": "Marketing Funnel Analytics",
-      "description": "Looker Studio report covering acquisition channels, funnel conversion, and CAC/LTV by campaign.",
+      "id": "looker-rhs-revenue",
+      "title": "RHS Revenue Dashboard",
+      "description": "Looker Studio dashboard with automated refresh, converted from Power BI to give the RHS revenue team a lighter-weight, auto-updating view.",
       "platform": "looker-studio",
       "embedUrl": "https://lookerstudio.google.com/embed/reporting/YOUR_REPORT_ID/page/YOUR_PAGE_ID",
-      "aspectRatio": "4/3"
-    },
-    {
-      "id": "kaggle-notebook",
-      "title": "Exploratory Data Analysis Notebook",
-      "description": "Kaggle notebook walking through EDA and feature engineering for the churn prediction project.",
-      "platform": "kaggle",
-      "embedUrl": "https://www.kaggle.com/embed/alexmorgan/churn-eda-notebook",
-      "aspectRatio": "4/3"
+      "aspectRatio": "16/9"
     }
   ]
 }

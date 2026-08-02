@@ -10,6 +10,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? siteContent.url,
   ogImage: "/images/og-image.png",
   email: siteContent.email,
+  phone: siteContent.phone,
   location: siteContent.location,
   keywords: siteContent.keywords,
   githubUsername: siteContent.githubUsername,

@@ -14,7 +14,11 @@ export interface SkillCategory {
 }
 
 export type ProjectCategory =
-  "machine-learning" | "data-engineering" | "analytics" | "visualization" | "nlp";
+  | "business-intelligence"
+  | "healthcare-it"
+  | "erp-integration"
+  | "data-engineering"
+  | "analytics";
 
 export interface Project {
   slug: string;
@@ -68,7 +72,7 @@ export interface EducationEntry {
 export interface Certification {
   id: string;
   name: string;
-  issuer: "Microsoft" | "Google" | "AWS" | "Azure" | "IBM" | "Databricks" | "Snowflake";
+  issuer: string;
   issueDate: string;
   credentialUrl?: string;
 }
@@ -90,7 +94,7 @@ export interface BlogPost extends BlogPostMeta {
 export interface SocialLink {
   label: string;
   url: string;
-  icon: "github" | "linkedin" | "email" | "kaggle" | "medium" | "twitter";
+  icon: "github" | "linkedin" | "email" | "kaggle" | "medium" | "twitter" | "website";
 }
 
 export interface StatItem {

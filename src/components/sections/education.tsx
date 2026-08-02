@@ -17,6 +17,9 @@ const issuerColor: Record<string, string> = {
   IBM: "from-[#0F62FE] to-[#001D6C]",
   Databricks: "from-[#FF3621] to-[#8B5CF6]",
   Snowflake: "from-[#29B5E8] to-[#1C6E9C]",
+  "Microsoft / Coursera": "from-[#00A4EF] to-[#0056D2]",
+  Udemy: "from-[#A435F0] to-[#5022C3]",
+  "Maven Analytics": "from-brand-secondary to-brand-primary",
 };
 
 export function Education() {
@@ -79,7 +82,9 @@ export function Education() {
                     {cert.issuer}
                   </span>
                   <p className="font-medium">{cert.name}</p>
-                  <p className="text-muted-foreground text-xs">Issued {cert.issueDate}</p>
+                  {cert.issueDate && (
+                    <p className="text-muted-foreground text-xs">Issued {cert.issueDate}</p>
+                  )}
                   {cert.credentialUrl && (
                     <Button asChild variant="outline" size="sm" className="mt-auto w-fit">
                       <a href={cert.credentialUrl} target="_blank" rel="noreferrer">

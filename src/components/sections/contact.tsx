@@ -4,7 +4,7 @@ import * as React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, Loader2, Mail, MapPin, Send } from "lucide-react";
+import { CheckCircle2, Loader2, Mail, MapPin, Phone, Send } from "lucide-react";
 
 import { SectionHeading } from "@/components/shared/section-heading";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
@@ -71,6 +71,22 @@ export function Contact() {
                   </a>
                 </div>
               </div>
+              {siteConfig.phone && (
+                <div className="flex items-start gap-3">
+                  <span className="bg-brand-accent/10 text-brand-accent flex size-10 shrink-0 items-center justify-center rounded-full">
+                    <Phone className="size-4" />
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold">Phone</p>
+                    <a
+                      href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+                      className="text-muted-foreground hover:text-foreground text-sm"
+                    >
+                      {siteConfig.phone}
+                    </a>
+                  </div>
+                </div>
+              )}
               <div className="flex items-start gap-3">
                 <span className="bg-brand-secondary/10 text-brand-secondary flex size-10 shrink-0 items-center justify-center rounded-full">
                   <MapPin className="size-4" />

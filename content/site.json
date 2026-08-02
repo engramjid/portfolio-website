@@ -1,48 +1,50 @@
 {
   "name": "Amjid Hussain",
-  "title": "Amjid Hussain — Data Scientist & Analytics Engineer",
-  "role": "Senior Data Scientist",
-  "tagline": "I turn messy data into decisions that ship.",
-  "description": "Senior Data Scientist and Analytics Engineer specializing in machine learning, data pipelines, and business intelligence. I build end-to-end systems that turn raw data into measurable impact.",
+  "title": "Amjid Hussain — Analytics Engineer & Power BI Developer",
+  "role": "Analytics Engineer",
+  "tagline": "I turn enterprise data into dashboards leadership actually trusts.",
+  "description": "Analytics Engineer with 8+ years delivering enterprise BI solutions across healthcare, PMO, and multi-sector operations. Power BI (PL-300 certified) specialist in star schema modeling, Oracle SQL/PL-SQL, and live SAP/ERP integration — building governed, automated dashboards that replace manual reporting.",
   "url": "https://amjidhussain-portfolio.vercel.app",
   "email": "amjidmir786@gmail.com",
-  "location": "Austin, Texas, USA",
+  "phone": "+92 332 9061374",
+  "location": "Islamabad, Pakistan · Open to Relocate",
   "keywords": [
-    "Data Scientist",
-    "Machine Learning Engineer",
-    "Data Engineer",
     "Analytics Engineer",
-    "Python",
-    "SQL",
-    "Portfolio"
+    "Power BI Developer",
+    "Business Intelligence",
+    "SAP Integration",
+    "Oracle SQL",
+    "Healthcare BI",
+    "KPI Dashboards",
+    "Pakistan"
   ],
   "githubUsername": "octocat",
   "typingWords": [
-    "Data Scientist",
-    "ML Engineer",
-    "Analytics Engineer",
-    "Data Storyteller"
+    "Power BI dashboards",
+    "SAP-integrated systems",
+    "healthcare KPI frameworks",
+    "enterprise reporting pipelines"
   ],
   "stats": [
     {
       "label": "Years of Experience",
-      "value": 7,
-      "suffix": "+"
-    },
-    {
-      "label": "Projects Shipped",
-      "value": 42,
-      "suffix": "+"
-    },
-    {
-      "label": "Models in Production",
-      "value": 15,
-      "suffix": "+"
-    },
-    {
-      "label": "Data Processed",
       "value": 8,
-      "suffix": "TB+"
+      "suffix": "+"
+    },
+    {
+      "label": "Power BI Dashboards Built",
+      "value": 50,
+      "suffix": "+"
+    },
+    {
+      "label": "Departments Served",
+      "value": 20,
+      "suffix": "+"
+    },
+    {
+      "label": "Reporting Time Reduced",
+      "value": 70,
+      "suffix": "%"
     }
   ]
 }

@@ -1,66 +1,59 @@
 {
   "entries": [
     {
-      "id": "msc-data-science",
-      "institution": "University of Texas at Austin",
-      "degree": "M.S.",
-      "field": "Data Science",
-      "startYear": "2017",
-      "endYear": "2019",
-      "details": "Thesis on hierarchical time-series forecasting for retail demand planning. Graduate Teaching Assistant for Applied Machine Learning."
+      "id": "msc-computer-engineering",
+      "institution": "University of Engineering & Technology, Taxila",
+      "degree": "M.Sc.",
+      "field": "Computer Engineering",
+      "startYear": "2021",
+      "endYear": "2024",
+      "details": "GPA: 3.9 / 4.0"
     },
     {
-      "id": "bsc-statistics",
-      "institution": "University of Wisconsin–Madison",
-      "degree": "B.S.",
-      "field": "Statistics & Computer Science",
+      "id": "bsc-computer-systems-engineering",
+      "institution": "Mirpur University of Science & Technology (MUST)",
+      "degree": "B.Sc.",
+      "field": "Computer Systems Engineering",
       "startYear": "2013",
       "endYear": "2017",
-      "details": "Minor in Economics. Graduated with honors."
+      "details": "GPA: 4.0 / 4.0 · PEC Reg. No: COMP/15335"
     }
   ],
   "certifications": [
     {
-      "id": "azure-data-scientist",
-      "name": "Azure Data Scientist Associate",
+      "id": "microsoft-pl-300",
+      "name": "Microsoft Power BI Data Analyst (PL-300)",
       "issuer": "Microsoft",
-      "issueDate": "2024",
-      "credentialUrl": "https://learn.microsoft.com/credentials/"
+      "issueDate": "2026",
+      "credentialUrl": ""
     },
     {
-      "id": "google-professional-data-engineer",
-      "name": "Professional Data Engineer",
-      "issuer": "Google",
-      "issueDate": "2023",
-      "credentialUrl": "https://cloud.google.com/certification/data-engineer"
+      "id": "microsoft-power-bi-professional-certificate",
+      "name": "Microsoft Power BI Data Analyst Professional Certificate",
+      "issuer": "Microsoft / Coursera",
+      "issueDate": "2025",
+      "credentialUrl": ""
     },
     {
-      "id": "aws-ml-specialty",
-      "name": "AWS Certified Machine Learning – Specialty",
-      "issuer": "AWS",
-      "issueDate": "2023",
-      "credentialUrl": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
+      "id": "looker-studio-masterclass",
+      "name": "Looker Studio – The Practical Masterclass",
+      "issuer": "Udemy",
+      "issueDate": "2026",
+      "credentialUrl": ""
     },
     {
-      "id": "databricks-data-engineer",
-      "name": "Databricks Certified Data Engineer Professional",
-      "issuer": "Databricks",
-      "issueDate": "2022",
-      "credentialUrl": "https://www.databricks.com/learn/certification"
+      "id": "bigquery-big-data-engineers",
+      "name": "BigQuery for Big Data Engineers",
+      "issuer": "Udemy",
+      "issueDate": "",
+      "credentialUrl": ""
     },
     {
-      "id": "snowflake-snowpro-core",
-      "name": "SnowPro Core Certification",
-      "issuer": "Snowflake",
-      "issueDate": "2022",
-      "credentialUrl": "https://www.snowflake.com/certifications/"
-    },
-    {
-      "id": "ibm-data-science-professional",
-      "name": "IBM Data Science Professional Certificate",
-      "issuer": "IBM",
-      "issueDate": "2020",
-      "credentialUrl": "https://www.ibm.com/training/certification"
+      "id": "power-bi-desktop-maven",
+      "name": "Microsoft Power BI Desktop for Business Intelligence",
+      "issuer": "Maven Analytics",
+      "issueDate": "",
+      "credentialUrl": ""
     }
   ]
 }

@@ -1,63 +1,69 @@
 {
   "categories": [
     {
-      "id": "programming",
-      "title": "Programming",
-      "description": "Core languages for analysis, modeling, and automation.",
+      "id": "bi-visualization",
+      "title": "BI & Visualization",
+      "description": "Turning enterprise data into dashboards leadership actually uses.",
       "skills": [
-        { "name": "Python", "level": "expert" },
-        { "name": "SQL", "level": "expert" },
-        { "name": "R", "level": "advanced" },
-        { "name": "JavaScript", "level": "proficient" }
+        { "name": "Power BI Desktop", "level": "expert" },
+        { "name": "Power BI Service", "level": "expert" },
+        { "name": "DAX", "level": "expert" },
+        { "name": "Power Query M", "level": "expert" },
+        { "name": "Looker Studio", "level": "advanced" },
+        { "name": "Jaspersoft iReport", "level": "advanced" }
       ]
     },
     {
-      "id": "frameworks",
-      "title": "Frameworks & Libraries",
-      "description": "Toolkits for data manipulation, ML, and deep learning.",
+      "id": "data-modeling",
+      "title": "Data Modeling",
+      "description": "Structuring data for reliable, fast enterprise reporting.",
       "skills": [
-        { "name": "Pandas", "level": "expert" },
-        { "name": "NumPy", "level": "expert" },
-        { "name": "Scikit-learn", "level": "advanced" },
-        { "name": "TensorFlow", "level": "advanced" },
-        { "name": "PyTorch", "level": "proficient" },
-        { "name": "Spark", "level": "proficient" }
+        { "name": "Star Schema", "level": "expert" },
+        { "name": "Fact/Dimension Tables", "level": "expert" },
+        { "name": "Data Warehousing", "level": "advanced" }
       ]
     },
     {
-      "id": "visualization",
-      "title": "Visualization",
-      "description": "Turning numbers into narratives stakeholders act on.",
+      "id": "database-sql",
+      "title": "Database & SQL",
+      "description": "Querying and modeling enterprise data at the source.",
       "skills": [
-        { "name": "Power BI", "level": "expert" },
-        { "name": "Tableau", "level": "advanced" },
-        { "name": "Plotly", "level": "advanced" },
-        { "name": "Matplotlib", "level": "expert" }
+        { "name": "Oracle SQL", "level": "expert" },
+        { "name": "PL/SQL", "level": "advanced" },
+        { "name": "Oracle APEX", "level": "advanced" },
+        { "name": "Google BigQuery", "level": "proficient" }
       ]
     },
     {
-      "id": "cloud",
-      "title": "Cloud & Platforms",
-      "description": "Deploying and scaling data systems in the cloud.",
+      "id": "erp-integration",
+      "title": "ERP & Integration",
+      "description": "Connecting BI directly to the systems of record.",
       "skills": [
-        { "name": "AWS", "level": "advanced" },
-        { "name": "Azure", "level": "advanced" },
-        { "name": "GCP", "level": "proficient" },
-        { "name": "Databricks", "level": "advanced" },
-        { "name": "Snowflake", "level": "advanced" }
+        { "name": "SAP ERP", "level": "advanced" },
+        { "name": "Smartsheet API", "level": "advanced" },
+        { "name": "REST API Integration", "level": "advanced" }
       ]
     },
     {
-      "id": "tools",
-      "title": "Tools & Workflow",
-      "description": "The engineering backbone behind reliable data products.",
+      "id": "healthcare-bi",
+      "title": "Healthcare & HIMS",
+      "description": "Deep domain expertise across hospital information systems.",
       "skills": [
-        { "name": "Docker", "level": "advanced" },
-        { "name": "Git", "level": "expert" },
-        { "name": "GitHub", "level": "expert" },
-        { "name": "Airflow", "level": "advanced" },
-        { "name": "dbt", "level": "advanced" },
-        { "name": "Linux", "level": "proficient" }
+        { "name": "Oracle HIMS", "level": "expert" },
+        { "name": "EHR/EMR", "level": "advanced" },
+        { "name": "LIS/LAS Integration", "level": "advanced" },
+        { "name": "PACS", "level": "proficient" }
+      ]
+    },
+    {
+      "id": "delivery",
+      "title": "Delivery & Stakeholder Management",
+      "description": "Turning ambiguous requirements into shipped, adopted dashboards.",
+      "skills": [
+        { "name": "KPI Framework Design", "level": "expert" },
+        { "name": "Requirements Gathering", "level": "expert" },
+        { "name": "Stakeholder Management", "level": "expert" },
+        { "name": "ETL / Data Transformation", "level": "advanced" }
       ]
     }
   ]

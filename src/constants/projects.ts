@@ -4,9 +4,9 @@ import type { Project } from "@/types";
 export const projects: Project[] = projectsContent.projects as Project[];
 
 export const projectCategoryLabels: Record<string, string> = {
-  "machine-learning": "Machine Learning",
+  "business-intelligence": "Business Intelligence",
+  "healthcare-it": "Healthcare IT",
+  "erp-integration": "ERP Integration",
   "data-engineering": "Data Engineering",
   analytics: "Analytics",
-  visualization: "Visualization",
-  nlp: "NLP",
 };

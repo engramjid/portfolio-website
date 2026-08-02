@@ -1,62 +1,106 @@
 {
   "entries": [
     {
-      "id": "senior-data-scientist",
-      "role": "Senior Data Scientist",
-      "company": "Northwind Analytics",
-      "companyUrl": "https://example.com",
-      "location": "Austin, TX (Remote)",
-      "startDate": "2023",
+      "id": "deputy-manager-riphah",
+      "role": "Deputy Manager — Analytics & BI (HIMS Domain)",
+      "company": "Riphah International University (IIMCT)",
+      "companyUrl": "",
+      "location": "Islamabad, Pakistan",
+      "startDate": "May 2024",
       "endDate": "Present",
       "responsibilities": [
-        "Lead a team of 3 data scientists building ML products for retention, forecasting, and pricing.",
-        "Own the end-to-end ML lifecycle from problem framing to production deployment and monitoring.",
-        "Partner directly with product and executive stakeholders to translate business goals into measurable models."
+        "Lead the analytics function delivering 13 strategic KPI objectives across Financial, Stakeholder, Employee Development, and Compliance perspectives.",
+        "Build hospital-wide KPI dashboards tracking 20+ clinical, operational, and administrative KPIs.",
+        "Design departmental dashboards (RHS, Pharmacy, FMSD) and integrate SAP ERP, Smartsheet API, and Oracle HIMS data pipelines.",
+        "Coordinate HIMS module delivery across development and clinical teams, tracking milestones and weekly progress."
       ],
       "achievements": [
-        "Reduced customer churn by 23% via a production churn-scoring engine.",
-        "Cut board-reporting prep time from 2 days to under 2 hours with a unified KPI dashboard.",
-        "Mentored 2 junior analysts into data scientist roles."
+        "Management dashboard adoption rate ≥80% across 13 strategic KPI objectives.",
+        "≥97% data accuracy and 100% monthly update compliance on hospital-wide KPI dashboards.",
+        "Reduced departmental manual reporting by ≥30% with stakeholder feedback score ≥4/5.",
+        "Automated weekly executive reports via Power Query M, cutting manual effort by 70% (~20 hrs to ~6 hrs/month).",
+        "Converted the RHS Revenue Dashboard to Looker Studio with automated refresh, achieving ≥90% dashboard delivery rate."
       ],
-      "technologies": ["Python", "Scikit-learn", "Airflow", "Snowflake", "Power BI", "AWS"]
+      "technologies": ["Power BI", "DAX", "Power Query M", "SAP ERP", "Smartsheet API", "Oracle HIMS", "Looker Studio"]
     },
     {
-      "id": "data-scientist",
-      "role": "Data Scientist",
-      "company": "BrightPath Retail",
-      "companyUrl": "https://example.com",
-      "location": "Chicago, IL",
-      "startDate": "2021",
-      "endDate": "2023",
+      "id": "assistant-manager-novaglobal",
+      "role": "Assistant Manager & Data Analytics Consultant",
+      "company": "NovaGlobal Solutions",
+      "companyUrl": "",
+      "location": "Islamabad, Pakistan",
+      "startDate": "Sep 2022",
+      "endDate": "Apr 2024",
       "responsibilities": [
-        "Built demand forecasting models across 300+ store locations for inventory planning.",
-        "Designed and maintained ELT pipelines feeding the analytics warehouse.",
-        "Ran quarterly A/B tests for merchandising and pricing experiments."
+        "Led EMR implementation across 14+ departments including OPD, IPD, Laboratory, Radiology, Pharmacy, and Billing — end-to-end from requirements through go-live.",
+        "Trained 500+ end users (clinicians, nurses, pharmacists, administrative staff) toward full system adoption.",
+        "Designed KPI dashboards for management and quality departments and built departmental analytical reports.",
+        "Assisted with LIS/LAS and PACS integrations, UAT, and post-implementation support."
       ],
       "achievements": [
-        "Improved forecast accuracy (MAPE) from 34% to 12%, saving an estimated $1.2M annually in carrying costs.",
-        "Automated a previously 15-hour manual reporting workflow down to a 20-minute pipeline."
+        "Achieved full clinical and administrative system adoption across 14+ departments.",
+        "Trained and onboarded 500+ end users to a new EMR system."
       ],
-      "technologies": ["Python", "Prophet", "LightGBM", "dbt", "PostgreSQL", "Tableau"]
+      "technologies": ["EMR", "HIMS", "LIS/LAS", "PACS", "Power BI"]
     },
     {
-      "id": "data-analyst",
-      "role": "Data Analyst",
-      "company": "Lumen Insights",
-      "companyUrl": "https://example.com",
-      "location": "Denver, CO",
-      "startDate": "2019",
-      "endDate": "2021",
+      "id": "senior-data-analyst-pof",
+      "role": "Senior Data Analyst & BI Developer",
+      "company": "Pakistan Ordnance Factories (POF)",
+      "companyUrl": "",
+      "location": "Wah Cantt, Pakistan",
+      "startDate": "Jul 2020",
+      "endDate": "Aug 2022",
       "responsibilities": [
-        "Delivered weekly and monthly reporting for marketing and operations stakeholders.",
-        "Built self-serve dashboards to reduce ad-hoc reporting requests.",
-        "Performed cohort, funnel, and segmentation analysis to guide campaign strategy."
+        "Integrated live Power BI dashboards with ERP APIs enabling 5-minute automated data refresh across 20+ departments.",
+        "Delivered daily, monthly, quarterly, and annual KPI tracking frameworks for 20+ departments.",
+        "Developed PMO and performance monitoring dashboards with API integrations.",
+        "Applied advanced SQL and ETL for multi-source data integration across operational and financial systems."
       ],
       "achievements": [
-        "Reduced ad-hoc reporting requests by 60% after launching self-serve dashboards.",
-        "Identified a segmentation insight that lifted email campaign conversion by 18%."
+        "Eliminated manual report preparation across 20+ departments with near real-time KPI monitoring.",
+        "Increased team productivity by 20% and reduced reporting backlog by 15%.",
+        "Achieved 95%+ KPI accuracy through advanced SQL/ETL multi-source integration."
       ],
-      "technologies": ["SQL", "Python", "Power BI", "Excel", "Google Analytics"]
+      "technologies": ["Power BI", "SQL", "ETL", "ERP API Integration"]
+    },
+    {
+      "id": "data-analyst-pacslink",
+      "role": "Data Analyst & Implementation Lead",
+      "company": "Pacslink Corporation",
+      "companyUrl": "",
+      "location": "Lahore, Pakistan",
+      "startDate": "Nov 2018",
+      "endDate": "Jun 2020",
+      "responsibilities": [
+        "Led HMIS implementation across multiple hospitals and departments — automated patient registration, billing reconciliation, appointment scheduling, and medical record workflows.",
+        "Designed and deployed Power BI, Oracle APEX, and Jaspersoft dashboards for real-time clinical and operational performance insights.",
+        "Gathered requirements from clinical and administrative stakeholders and translated them into functional specs, running UAT and validation."
+      ],
+      "achievements": [
+        "Reduced administrative manual effort by 30% across multiple hospital implementations.",
+        "Cut financial and operational reporting preparation time by 40%.",
+        "Reduced reporting errors by 20% and improved overall data accuracy."
+      ],
+      "technologies": ["Power BI", "Oracle APEX", "Jaspersoft", "HMIS"]
+    },
+    {
+      "id": "junior-consultant-pacslink",
+      "role": "Junior Consultant",
+      "company": "Pacslink Corporation",
+      "companyUrl": "",
+      "location": "Lahore, Pakistan",
+      "startDate": "Oct 2017",
+      "endDate": "Oct 2018",
+      "responsibilities": [
+        "Developed Jaspersoft iReport dashboards embedded in HIMS for real-time financial and departmental insights.",
+        "Assisted in HIMS, PACS, and LIS/LAS workflow configuration.",
+        "Deployed Oracle 11G/APEX and Microsoft infrastructure solutions (AD, DHCP, WSUS); supported clinical data entry workflow design and network administration."
+      ],
+      "achievements": [
+        "Delivered embedded real-time reporting dashboards across HIMS financial and departmental workflows."
+      ],
+      "technologies": ["Jaspersoft iReport", "Oracle 11G", "Oracle APEX", "HIMS", "PACS"]
     }
   ]
 }

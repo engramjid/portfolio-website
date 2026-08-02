@@ -15,22 +15,30 @@ import { experienceEntries } from "@/constants/experience";
 import { educationEntries } from "@/constants/education";
 
 const currentFocus = [
-  "Building reliable ML systems that survive contact with production traffic.",
-  "Designing semantic data layers (dbt) that make analytics trustworthy by default.",
-  "Applying LLMs to internal tooling where cost and hallucination risk are well understood.",
+  "Building governed KPI frameworks that leadership actually trusts and adopts.",
+  "Deepening live SAP/ERP and Oracle HIMS integrations so dashboards reflect reality, not a weekly export.",
+  "Applying neuroscience-informed methods (EEG-based engagement analysis) to analytics work.",
 ];
 
 const achievements = [
-  "Reduced customer churn 23% via a production ML scoring engine.",
-  "Cut data latency from 24h to under 3 minutes on a real-time pipeline.",
-  "Saved an estimated $1.2M annually through improved demand forecasting.",
-  "Mentored 2 analysts into full data scientist roles.",
+  "Architected a PKR 5.73B PMO capital portfolio dashboard used directly by university leadership.",
+  "Cut monthly KPI reporting effort by 70% through automated Power BI ETL pipelines.",
+  "Trained 500+ end users across a 14+ department EMR rollout to full adoption.",
+  "Published research on EEG-based visual engagement measurement in neuromarketing (Dec 2024).",
+  "Performance Excellence Award, IIMCT – Riphah International University (Dec 2025).",
 ];
+
+function extractSortYear(dateStr: string): number {
+  if (/present/i.test(dateStr)) return Infinity;
+  const match = dateStr.match(/\d{4}/);
+  return match ? Number(match[0]) : 0;
+}
 
 const timeline = [
   ...experienceEntries.map((e) => ({
     id: e.id,
     year: `${e.startDate} — ${e.endDate}`,
+    sortYear: extractSortYear(e.endDate),
     title: e.role,
     subtitle: e.company,
     icon: "work" as const,
@@ -38,11 +46,12 @@ const timeline = [
   ...educationEntries.map((e) => ({
     id: e.id,
     year: `${e.startYear} — ${e.endYear}`,
+    sortYear: extractSortYear(e.endYear),
     title: `${e.degree} ${e.field}`,
     subtitle: e.institution,
     icon: "education" as const,
   })),
-].sort((a, b) => b.year.localeCompare(a.year));
+].sort((a, b) => b.sortYear - a.sortYear);
 
 export function About() {
   return (
@@ -50,30 +59,32 @@ export function About() {
       <div className="section-container">
         <SectionHeading
           eyebrow="About"
-          title="Data professional, systems thinker."
-          description="I care less about the fanciest model and more about whether the thing actually runs reliably in production and changes a decision someone makes."
+          title="Analytics engineer, systems thinker."
+          description="I care less about a dashboard looking impressive and more about whether leadership actually trusts the numbers on it and uses them to decide something."
         />
 
         <div className="mt-16 grid gap-12 lg:grid-cols-[1fr_1fr]">
           <ScrollReveal direction="left">
             <div className="text-muted-foreground space-y-5 text-base leading-relaxed">
               <p>
-                I&apos;m a Senior Data Scientist and Analytics Engineer with 7+ years of
-                experience taking data products from a rough hypothesis to something that
-                runs unattended in production. My background spans classical ML,
-                forecasting, NLP, and the data engineering that makes all of it possible.
+                I&apos;m an Analytics Engineer with 8+ years delivering enterprise BI
+                across healthcare, PMO, and multi-sector operations. I&apos;m Power BI
+                PL-300 certified, and my work centers on star-schema data modeling,
+                Oracle SQL/PL-SQL, and wiring dashboards directly into live SAP ERP and
+                Oracle HIMS systems rather than exports and manual refreshes.
               </p>
               <p>
-                I started as a data analyst writing SQL for weekly reports, and the
-                throughline since then has been the same: get closer to the decision the
-                data is supposed to inform, and build the smallest reliable system that
-                gets you there.
+                I started in HIMS implementation and network administration, and the
+                throughline since then has been the same: get the dashboard as close to
+                the source system as possible, build a KPI framework stakeholders agree
+                on before writing a single DAX measure, and automate the reporting effort
+                out of the process entirely.
               </p>
               <p>
-                Outside of client and product work, I write about the practical side of
-                data science &mdash; the parts that don&apos;t make it into textbooks,
-                like stakeholder trust, uncertainty communication, and when *not* to reach
-                for a new tool.
+                Outside of BI work, I&apos;ve published research applying EEG-based
+                methods to measure visual engagement in neuromarketing &mdash; a
+                different lens on the same underlying question of turning raw signal
+                into a decision someone can act on.
               </p>
             </div>
 
