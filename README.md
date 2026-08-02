@@ -13,6 +13,11 @@ form — plus dark/light theming, glassmorphism, gradient accents, scroll
 reveal animations, and full SEO metadata (Open Graph images, JSON-LD,
 sitemap, robots.txt).
 
+**Includes a real admin panel** ([TinaCMS](https://tina.io)) at `/admin` for
+editing every section — projects, skills, experience, blog posts, and more —
+through browser forms instead of code. See
+[Content Admin Panel](#content-admin-panel-tinacms) below.
+
 ## Tech Stack
 
 - **Framework:** Next.js 16 (App Router, Turbopack)
@@ -55,9 +60,11 @@ npm run lint    # ESLint
 Copy `.env.example` to `.env.local`. Every variable is optional — the app
 runs with sane defaults out of the box:
 
-| Variable               | Purpose                                                              |
-| ---------------------- | -------------------------------------------------------------------- |
-| `NEXT_PUBLIC_SITE_URL` | Canonical domain used for metadata, sitemap, robots.txt, and OG tags |
+| Variable                     | Purpose                                                                             |
+| ----------------------------- | -------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`       | Canonical domain used for metadata, sitemap, robots.txt, and OG tags                 |
+| `NEXT_PUBLIC_TINA_CLIENT_ID` | Only needed to enable the admin panel on your *deployed* site — see below             |
+| `TINA_TOKEN`                 | Same as above                                                                         |
 
 See `.env.example` for details, including notes on wiring up a real email
 provider for the contact form and how the GitHub API integration handles
@@ -66,45 +73,97 @@ rate limits.
 ## Project Structure
 
 ```
-content/blog/            Markdown blog posts (frontmatter: title, excerpt, date, tags, coverImage)
+content/                 All editable content, as JSON + Markdown (see Content Admin Panel below)
+  site.json               Name, tagline, bio, contact info, hero typing words, stat cards
+  skills.json              Skill categories and proficiency levels
+  projects.json            Project cards (problem/solution/impact, tech stack, links)
+  experience.json          Work history timeline
+  education.json           Degrees and certifications
+  dashboards.json           BI dashboard embed config
+  social.json              Social links
+  blog/*.md                Blog posts (frontmatter: title, excerpt, date, tags, coverImage)
 public/images/           Avatar, project, and blog placeholder graphics (SVG)
 public/resume.pdf         Placeholder resume — replace with your real PDF
+tina/config.ts           TinaCMS schema — defines the admin panel's forms/fields
 src/
-  app/                    Routes (App Router): home, /blog, /blog/[slug], /resume, API routes,
-                          sitemap.ts, robots.ts, opengraph-image.tsx, icon.tsx
+  app/                    Routes (App Router): home, /blog, /blog/[slug], /resume, /admin, API
+                          routes, sitemap.ts, robots.ts, opengraph-image.tsx, icon.tsx
   components/
     layout/               Navbar, Footer, BackToTop, ThemeProvider/Toggle
     sections/             One component per homepage section (Hero, About, Skills, Projects, …)
     shared/                Reusable primitives (ScrollReveal, SectionHeading, StatCard, …)
     ui/                     shadcn/ui components
-  constants/              All editable content lives here (site, skills, projects, experience, …)
+  constants/              Thin typed wrappers around content/*.json (import here, not the JSON
+                          directly, to keep everything type-safe)
   hooks/                  useGithubData (live GitHub API fetch)
   lib/                    cn() helper, blog utilities, Zod validation schemas
   types/                  Shared TypeScript types
 ```
 
+## Content Admin Panel (TinaCMS)
+
+Every section of the site — Site Settings, Skills, Projects, Experience,
+Education & Certifications, Dashboard Showcase, Social Links, and Blog Posts
+— is editable through a real admin UI at **`/admin`**, powered by
+[TinaCMS](https://tina.io). No database: edits are saved straight back to the
+`content/*.json` and `content/blog/*.md` files you see in the repo.
+
+### Local editing (works immediately, no signup)
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000/admin](http://localhost:3000/admin) → **Enter
+Edit Mode**. Pick a collection from the sidebar, edit the form, hit **Save**.
+The change writes to the matching file under `content/` immediately, and the
+live site hot-reloads to reflect it. Commit and push those file changes like
+any other code change to publish them.
+
+This local mode requires the project to be a git repository (already set up
+for you) but nothing else — no account, no API keys.
+
+### Editing the deployed site itself (optional)
+
+Local mode only works on your machine. To get a working `/admin` on your
+*deployed* site — with real login — connect a free
+[Tina Cloud](https://app.tina.io) account:
+
+1. Push this repo to GitHub.
+2. Sign up at [app.tina.io](https://app.tina.io) (free) and connect the repo.
+3. Copy the generated **Client ID** and create a **read-only token**.
+4. Add them as environment variables on your hosting platform:
+   `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN`.
+5. Change your hosting platform's build command from `npm run build` to
+   `npm run build:cloud` (defined in `package.json` as
+   `tinacms build && next build`) — the default `build` script uses
+   `--local --skip-cloud-checks` so it never hard-fails for people who
+   haven't connected Tina Cloud yet.
+6. Redeploy. Tina Cloud commits edits back to GitHub on your behalf, which
+   triggers a normal redeploy on Vercel/Cloudflare Pages.
+
+This step is entirely optional — skip it if editing locally and pushing via
+git is enough for you.
+
 ## Customization
 
-Almost everything you'd want to personalize lives in `src/constants/*.ts` as
-plain, typed data — no need to touch component code:
+All editorial content lives in `content/*.json` and `content/blog/*.md` —
+edit it directly, or through the [admin panel](#content-admin-panel-tinacms)
+above. `src/constants/*.ts` are thin typed wrappers around that JSON; you
+shouldn't normally need to touch them.
 
-- `site.ts` — name, title, tagline, bio blurb, email, location, GitHub
-  username, typing-effect words
-- `skills.ts`, `projects.ts`, `experience.ts`, `education.ts`,
-  `dashboards.ts`, `social.ts` — one file per section
+Things to replace before shipping:
 
-Other things to replace before shipping:
-
-1. **`src/constants/site.ts`** → set `githubUsername` to your real GitHub
-   handle (defaults to `octocat` as a working demo).
+1. **`content/site.json`** → set `githubUsername` to your real GitHub handle
+   (defaults to `octocat` as a working demo), plus your name/email/etc.
 2. **`public/resume.pdf`** → swap in your real resume (the placeholder is a
    minimal generated PDF).
 3. **`public/images/avatar-placeholder.svg`** → replace with a real photo
    (any raster/SVG works; update the `src` in `src/components/sections/hero.tsx`).
-4. **`src/constants/dashboards.ts`** → replace the placeholder `embedUrl`s
-   with your real Power BI / Tableau / Looker Studio / Kaggle embed links.
+4. **`content/dashboards.json`** → replace the placeholder `embedUrl`s with
+   your real Power BI / Tableau / Looker Studio / Kaggle embed links.
 5. **`content/blog/*.md`** → replace with your own posts (same frontmatter
-   shape).
+   shape), or write new ones straight from `/admin`.
 6. **`src/app/api/contact/route.ts`** → currently validates and logs
    submissions server-side only. Wire in a provider (e.g. [Resend](https://resend.com))
    to actually send email.
@@ -122,7 +181,9 @@ with zero config.
 
 1. Push this repo to GitHub.
 2. Import it at [vercel.com/new](https://vercel.com/new).
-3. Add `NEXT_PUBLIC_SITE_URL` under Project Settings → Environment Variables.
+3. Add `NEXT_PUBLIC_SITE_URL` under Project Settings → Environment Variables
+   (optionally also `NEXT_PUBLIC_TINA_CLIENT_ID`/`TINA_TOKEN` — see
+   [Content Admin Panel](#content-admin-panel-tinacms)).
 4. Deploy.
 
 ```bash

@@ -17,11 +17,32 @@
     "Portfolio"
   ],
   "githubUsername": "octocat",
-  "typingWords": ["Data Scientist", "ML Engineer", "Analytics Engineer", "Data Storyteller"],
+  "typingWords": [
+    "Data Scientist",
+    "ML Engineer",
+    "Analytics Engineer",
+    "Data Storyteller"
+  ],
   "stats": [
-    { "label": "Years of Experience", "value": 7, "suffix": "+" },
-    { "label": "Projects Shipped", "value": 42, "suffix": "+" },
-    { "label": "Models in Production", "value": 15, "suffix": "+" },
-    { "label": "Data Processed", "value": 8, "suffix": "TB+" }
+    {
+      "label": "Years of Experience",
+      "value": 7,
+      "suffix": "+"
+    },
+    {
+      "label": "Projects Shipped",
+      "value": 42,
+      "suffix": "+"
+    },
+    {
+      "label": "Models in Production",
+      "value": 15,
+      "suffix": "+"
+    },
+    {
+      "label": "Data Processed",
+      "value": 8,
+      "suffix": "TB+"
+    }
   ]
 }
