@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
 import { contactFormSchema } from "@/lib/validations/contact";
+import { siteConfig } from "@/constants/site";
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -23,14 +25,34 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: true });
   }
 
-  // No transactional email provider is configured for this template.
-  // Wire up a provider (e.g. Resend, Postmark, SendGrid) here and forward
-  // `parsed.data` to it. For now, submissions are logged server-side only.
-  console.info("[contact] New message:", {
-    name: parsed.data.name,
-    email: parsed.data.email,
-    subject: parsed.data.subject,
-  });
+  const { name, email, subject, message } = parsed.data;
+
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.info("[contact] New message (no RESEND_API_KEY configured):", {
+      name,
+      email,
+      subject,
+    });
+    return NextResponse.json({ success: true });
+  }
+
+  try {
+    const resend = new Resend(apiKey);
+    await resend.emails.send({
+      from: "Portfolio Contact Form <onboarding@resend.dev>",
+      to: siteConfig.email,
+      replyTo: email,
+      subject: `[Portfolio] ${subject}`,
+      text: `From: ${name} <${email}>\n\n${message}`,
+    });
+  } catch (error) {
+    console.error("[contact] Failed to send email:", error);
+    return NextResponse.json(
+      { error: "Failed to send your message. Please try again later." },
+      { status: 502 }
+    );
+  }
 
   return NextResponse.json({ success: true });
 }
