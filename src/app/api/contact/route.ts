@@ -43,7 +43,7 @@ export async function POST(request: Request) {
       from: "Portfolio Contact Form <onboarding@resend.dev>",
       to: siteConfig.email,
       replyTo: email,
-      subject: `[Portfolio] ${subject}`,
+      subject: `[Portfolio] ${name}: ${subject}`,
       text: `From: ${name} <${email}>\n\n${message}`,
     });
   } catch (error) {

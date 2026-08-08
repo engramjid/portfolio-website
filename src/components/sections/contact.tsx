@@ -163,7 +163,7 @@ export function Contact() {
                 <Label htmlFor="subject">Subject</Label>
                 <Input
                   id="subject"
-                  placeholder="Analytics Engineer role, project, or just a question"
+                  placeholder="Project Role"
                   aria-invalid={!!errors.subject}
                   {...register("subject")}
                 />
