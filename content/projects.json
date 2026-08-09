@@ -61,14 +61,14 @@
     {
       "slug": "organization-expense-management-dashboard",
       "title": "Organization Expense Management Dashboard — Multi-Site KPI Tracking",
-      "description": "Live expense monitoring dashboard tracking 5 years of organizational expenses across 4 hospital sites, benchmarked against revenue — SAP API integration, daily refresh, and full cross-filter interactivity.",
-      "problem": "A multi-site healthcare organization required real-time visibility into organizational expenses across 4 hospital sites — covering direct, indirect, and allocation expense categories against monthly targets. Manual reporting through SAP extracts caused delays and limited leadership's ability to act on budget variances in time.",
+      "description": "Live expense monitoring dashboard tracking 5 years of organizational expenses across 4 Major Organization sites, benchmarked against revenue — SAP API integration, daily refresh, and full cross-filter interactivity.",
+      "problem": "A multi-site healthcare organization required real-time visibility into organizational expenses across 4 Major Organization sites — covering direct, indirect, and allocation expense categories against monthly targets. Manual reporting through SAP extracts caused delays and limited leadership's ability to act on budget variances in time.",
       "solution": "Built a comprehensive expense monitoring dashboard integrating live SAP ERP data via API with Smartsheet target data in Power BI. The dashboard tracks 5 years of organizational expense data, growing and updating automatically. Key features include KPI cards showing actual vs. target with utilization percentages across total, direct, indirect, and allocation expenses — each category also benchmarked against gross revenue (Expense vs. Revenue %) for a complete financial efficiency view; monthly expense trend analysis with target vs. actual comparison; top expenses by unit head with a live search box for specific head filtering; full cross-filter interactivity where clicking any bar or expense head filters all other visuals simultaneously; and hospital/expense-type slicers for site-level and category-level drill-down. Deployed on Power BI Service with a dedicated app, daily automated refresh, 5-year archived data, and 20-day incremental refresh logic.",
-      "impact": "Tracks PKR 5.78 billion in total expenses in real time across 4 hospital sites (PKR 2.12 billion in the current financial year alone), with direct, indirect, and allocation KPIs visible against target at every level. Leadership now identifies overspending unit heads instantly via live search and cross-filtering, and manual SAP extraction for monthly expense reporting has been eliminated entirely.",
+      "impact": "Tracks PKR 5.78 billion in total expenses in real time across 4 Major Organization sites (PKR 2.12 billion in the current financial year alone), with direct, indirect, and allocation KPIs visible against target at every level. Leadership now identifies overspending unit heads instantly via live search and cross-filtering, and manual SAP extraction for monthly expense reporting has been eliminated entirely.",
       "image": "/images/projects/expense-dashboard-1.png",
       "video": "/images/projects/expense-dashboard-demo.mp4",
       "categories": ["business-intelligence", "healthcare-it", "erp-integration"],
-      "techStack": ["Power BI", "DAX", "SAP ERP API", "Smartsheet API", "Power BI Service", "Star Schema"],
+      "techStack": ["Power BI", "DAX", "SQL", "SAP ERP API", "Smartsheet API", "Power BI Service", "Star Schema"],
       "featured": true
     }
   ]
