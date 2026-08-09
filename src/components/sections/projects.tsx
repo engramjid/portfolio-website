@@ -182,15 +182,48 @@ function ProjectCard({ project }: { project: Project }) {
               <DialogHeader>
                 <DialogTitle className="text-xl">{project.title}</DialogTitle>
               </DialogHeader>
-              <div className="relative aspect-video overflow-hidden rounded-lg">
-                <Image
-                  src={project.image}
-                  alt={`${project.title} preview`}
-                  fill
-                  sizes="(min-width: 640px) 576px, 100vw"
-                  className="object-cover"
+              {project.video ? (
+                <video
+                  src={project.video}
+                  poster={project.image}
+                  controls
+                  loop
+                  muted
+                  playsInline
+                  className="aspect-video w-full rounded-lg object-cover"
                 />
-              </div>
+              ) : (
+                <div className="relative aspect-video overflow-hidden rounded-lg">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    fill
+                    sizes="(min-width: 640px) 576px, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              )}
+              {project.screenshots && project.screenshots.length > 0 && (
+                <div className="flex gap-2 overflow-x-auto pb-1">
+                  {project.screenshots.map((src, i) => (
+                    <a
+                      key={src}
+                      href={src}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="relative aspect-video w-32 shrink-0 overflow-hidden rounded-md border border-border"
+                    >
+                      <Image
+                        src={src}
+                        alt={`${project.title} screenshot ${i + 2}`}
+                        fill
+                        sizes="128px"
+                        className="object-cover transition-opacity hover:opacity-80"
+                      />
+                    </a>
+                  ))}
+                </div>
+              )}
               <div className="space-y-4 text-sm">
                 <DetailBlock label="Problem" text={project.problem} />
                 <DetailBlock label="Solution" text={project.solution} />

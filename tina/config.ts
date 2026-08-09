@@ -137,6 +137,17 @@ export default defineConfig({
               { type: "image", name: "image", label: "Cover Image" },
               {
                 type: "string",
+                name: "video",
+                label: "Demo Video/GIF (path or URL, e.g. /images/projects/demo.mp4)",
+              },
+              {
+                type: "image",
+                name: "screenshots",
+                label: "Additional Screenshots",
+                list: true,
+              },
+              {
+                type: "string",
                 name: "categories",
                 label: "Categories",
                 list: true,

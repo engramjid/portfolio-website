@@ -28,6 +28,8 @@ export interface Project {
   solution: string;
   impact: string;
   image: string;
+  video?: string;
+  screenshots?: string[];
   categories: ProjectCategory[];
   techStack: string[];
   githubUrl?: string;
