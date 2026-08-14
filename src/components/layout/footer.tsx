@@ -33,7 +33,7 @@ export function Footer() {
 
         <nav
           aria-label="Footer"
-          className="grid grid-cols-2 gap-x-10 gap-y-2 sm:grid-cols-1"
+          className="flex flex-wrap gap-x-6 gap-y-2 sm:max-w-[220px] sm:justify-end"
         >
           {navLinks.map((link) => (
             <Link
