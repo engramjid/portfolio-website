@@ -5,11 +5,6 @@
       "url": "https://www.linkedin.com/in/amjid-hussain-ab55a413b",
       "icon": "linkedin"
     },
-    { "label": "Email", "url": "mailto:amjidmir786@gmail.com", "icon": "email" },
-    {
-      "label": "Portfolio",
-      "url": "https://mavenanalytics.io/project/56840",
-      "icon": "website"
-    }
+    { "label": "Email", "url": "mailto:amjidmir786@gmail.com", "icon": "email" }
   ]
 }
