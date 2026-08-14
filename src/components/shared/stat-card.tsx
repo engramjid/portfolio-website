@@ -26,10 +26,10 @@ function AnimatedCounter({ value }: { value: number }) {
 
 export function StatCard({ label, value, suffix }: StatItem) {
   return (
-    <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.2 }}>
-      <Card className="glass-panel border-none py-6 text-center">
+    <motion.div whileHover={{ y: -3 }} transition={{ duration: 0.2 }}>
+      <Card className="glass-panel py-6 text-center">
         <CardContent>
-          <p className="gradient-text text-3xl font-bold sm:text-4xl">
+          <p className="text-primary font-mono text-3xl font-semibold tracking-tight sm:text-4xl">
             <AnimatedCounter value={value} />
             {suffix}
           </p>

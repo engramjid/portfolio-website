@@ -21,8 +21,10 @@ import { cn } from "@/lib/utils";
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
   const [open, setOpen] = React.useState(false);
+  const [activeSection, setActiveSection] = React.useState<string | null>(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const isBlog = pathname.startsWith("/blog");
 
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -31,23 +33,50 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  React.useEffect(() => {
+    if (!isHome) return;
+    const sectionIds = navLinks
+      .map((link) => link.href)
+      .filter((href) => href.startsWith("#"))
+      .map((href) => href.slice(1));
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => el !== null);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((e) => e.isIntersecting);
+        if (visible.length > 0) {
+          setActiveSection(visible[0].target.id);
+        }
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+    sections.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [isHome]);
+
   const resolveHref = (href: string) =>
     href.startsWith("#") && !isHome ? `/${href}` : href;
+
+  const isActive = (href: string) => {
+    if (href === "/blog") return isBlog;
+    if (href.startsWith("#")) return isHome && activeSection === href.slice(1);
+    return false;
+  };
 
   return (
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "glass-panel border-b shadow-sm"
-          : "border-b border-transparent bg-transparent"
+        scrolled ? "nav-glass shadow-sm" : "border-b border-transparent bg-transparent"
       )}
     >
       <nav
         aria-label="Primary"
         className="section-container flex h-16 items-center justify-between"
       >
-        <Link href="/" className="gradient-text text-lg font-bold tracking-tight">
+        <Link href="/" className="text-primary text-lg font-semibold tracking-tight">
           {siteConfig.name}
         </Link>
 
@@ -56,7 +85,13 @@ export function Navbar() {
             <li key={link.href}>
               <Link
                 href={resolveHref(link.href)}
-                className="text-muted-foreground hover:bg-muted hover:text-foreground rounded-md px-3 py-2 text-sm font-medium transition-colors"
+                aria-current={isActive(link.href) ? "page" : undefined}
+                className={cn(
+                  "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                  isActive(link.href)
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                )}
               >
                 {link.label}
               </Link>

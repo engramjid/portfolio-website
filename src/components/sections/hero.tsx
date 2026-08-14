@@ -33,7 +33,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-brand-primary text-sm font-semibold tracking-wide uppercase"
+            className="eyebrow"
           >
             Hi, I&apos;m {siteConfig.name.split(" ")[0]}
           </motion.p>
@@ -42,7 +42,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-3 text-4xl leading-tight font-extrabold tracking-tight text-balance sm:text-5xl lg:text-6xl"
+            className="mt-3 text-4xl leading-[1.08] font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl"
           >
             I build{" "}
             <span className="gradient-text">
@@ -93,7 +93,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-muted-foreground mt-10 flex items-center gap-2 text-sm"
           >
-            <FolderGit2 className="text-brand-secondary size-4" />
+            <FolderGit2 className="text-muted-foreground size-4" />
             <span>{siteConfig.location} &middot; Open to full-time roles</span>
           </motion.div>
         </div>
@@ -119,7 +119,7 @@ export function Hero() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="glass-panel absolute -bottom-6 -left-6 rounded-2xl px-4 py-3"
           >
-            <p className="gradient-text text-2xl font-bold">8+ yrs</p>
+            <p className="text-primary font-mono text-2xl font-semibold">8+ yrs</p>
             <p className="text-muted-foreground text-xs">Enterprise BI experience</p>
           </motion.div>
         </motion.div>

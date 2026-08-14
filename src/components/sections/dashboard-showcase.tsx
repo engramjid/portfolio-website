@@ -17,7 +17,7 @@ export function DashboardShowcase() {
         <SectionHeading
           eyebrow="Dashboard Showcase"
           title="Live reports, not screenshots"
-          description="Interactive BI dashboards embedded directly from Power BI, Tableau, Looker Studio, and Kaggle."
+          description="Interactive BI dashboards embedded directly from Power BI and Looker Studio."
         />
 
         <Tabs defaultValue={dashboardEmbeds[0].id} className="mt-14">
@@ -36,7 +36,7 @@ export function DashboardShowcase() {
           {dashboardEmbeds.map((embed) => (
             <TabsContent key={embed.id} value={embed.id} className="mt-8">
               <ScrollReveal>
-                <div className="glass-panel overflow-hidden rounded-2xl">
+                <div className="glass-panel overflow-hidden rounded-xl">
                   <div className="border-border/60 flex flex-col gap-3 border-b p-5 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <div className="mb-1 flex items-center gap-2">
@@ -72,14 +72,6 @@ export function DashboardShowcase() {
             </TabsContent>
           ))}
         </Tabs>
-
-        <p className="text-muted-foreground mt-6 text-center text-xs">
-          Embeds use placeholder URLs &mdash; swap in your real report links in{" "}
-          <code className="bg-muted rounded px-1.5 py-0.5">
-            src/constants/dashboards.ts
-          </code>
-          .
-        </p>
       </div>
     </section>
   );

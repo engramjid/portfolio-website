@@ -15,8 +15,8 @@ export default function OpengraphImage() {
         flexDirection: "column",
         justifyContent: "center",
         padding: "80px",
-        backgroundImage: "linear-gradient(135deg, #0F172A 0%, #1E293B 55%, #2563EB 100%)",
-        color: "#F8FAFC",
+        backgroundImage: "linear-gradient(135deg, #0A0B0D 0%, #121417 60%, #16223d 100%)",
+        color: "#F2F4F7",
         fontFamily: "sans-serif",
       }}
     >
@@ -27,7 +27,7 @@ export default function OpengraphImage() {
           gap: 12,
           fontSize: 28,
           fontWeight: 600,
-          color: "#8B5CF6",
+          color: "#5B8CFF",
         }}
       >
         {siteConfig.role}
@@ -36,7 +36,7 @@ export default function OpengraphImage() {
         style={{
           display: "flex",
           fontSize: 76,
-          fontWeight: 800,
+          fontWeight: 700,
           marginTop: 24,
           maxWidth: 950,
         }}
@@ -49,7 +49,7 @@ export default function OpengraphImage() {
           fontSize: 32,
           marginTop: 24,
           maxWidth: 900,
-          color: "#94A3B8",
+          color: "#99A1AC",
         }}
       >
         {siteConfig.tagline}
@@ -57,21 +57,17 @@ export default function OpengraphImage() {
       <div
         style={{
           display: "flex",
-          gap: 16,
           marginTop: 56,
         }}
       >
-        {["#2563EB", "#06B6D4", "#8B5CF6"].map((c) => (
-          <div
-            key={c}
-            style={{
-              width: 64,
-              height: 8,
-              borderRadius: 999,
-              backgroundColor: c,
-            }}
-          />
-        ))}
+        <div
+          style={{
+            width: 64,
+            height: 6,
+            borderRadius: 999,
+            backgroundColor: "#5B8CFF",
+          }}
+        />
       </div>
     </div>,
     { ...size }

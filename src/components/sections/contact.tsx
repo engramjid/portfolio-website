@@ -58,7 +58,7 @@ export function Contact() {
           <ScrollReveal direction="left">
             <div className="space-y-6">
               <div className="flex items-start gap-3">
-                <span className="bg-brand-primary/10 text-brand-primary flex size-10 shrink-0 items-center justify-center rounded-full">
+                <span className="bg-muted text-foreground flex size-10 shrink-0 items-center justify-center rounded-lg">
                   <Mail className="size-4" />
                 </span>
                 <div>
@@ -73,7 +73,7 @@ export function Contact() {
               </div>
               {siteConfig.phone && (
                 <div className="flex items-start gap-3">
-                  <span className="bg-brand-accent/10 text-brand-accent flex size-10 shrink-0 items-center justify-center rounded-full">
+                  <span className="bg-muted text-foreground flex size-10 shrink-0 items-center justify-center rounded-lg">
                     <Phone className="size-4" />
                   </span>
                   <div>
@@ -88,7 +88,7 @@ export function Contact() {
                 </div>
               )}
               <div className="flex items-start gap-3">
-                <span className="bg-brand-secondary/10 text-brand-secondary flex size-10 shrink-0 items-center justify-center rounded-full">
+                <span className="bg-muted text-foreground flex size-10 shrink-0 items-center justify-center rounded-lg">
                   <MapPin className="size-4" />
                 </span>
                 <div>
@@ -105,7 +105,7 @@ export function Contact() {
                     target={link.icon === "email" ? undefined : "_blank"}
                     rel="noreferrer"
                     aria-label={link.label}
-                    className="border-border text-muted-foreground hover:border-brand-primary hover:text-brand-primary flex size-10 items-center justify-center rounded-full border transition-colors"
+                    className="border-border text-muted-foreground hover:border-primary hover:text-primary flex size-10 items-center justify-center rounded-lg border transition-colors"
                   >
                     <SocialIcon icon={link.icon} className="size-4" />
                   </a>
@@ -118,7 +118,7 @@ export function Contact() {
             <form
               onSubmit={handleSubmit(onSubmit)}
               noValidate
-              className="glass-panel space-y-5 rounded-2xl p-6 sm:p-8"
+              className="glass-panel space-y-5 rounded-xl p-6 sm:p-8"
             >
               {/* Honeypot — hidden from real users, visible to bots */}
               <div className="hidden" aria-hidden="true">

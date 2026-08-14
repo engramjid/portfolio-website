@@ -26,7 +26,7 @@ export default function ResumePage() {
         </Button>
       </div>
 
-      <div className="glass-panel mt-12 overflow-hidden rounded-2xl">
+      <div className="glass-panel mt-12 overflow-hidden rounded-xl">
         <object
           data={siteConfig.resumePdf}
           type="application/pdf"

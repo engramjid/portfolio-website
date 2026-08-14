@@ -36,13 +36,13 @@ export function AnimatedBackground({ className }: { className?: string }) {
     renderer.setSize(container.clientWidth, container.clientHeight);
     container.appendChild(renderer.domElement);
 
-    const particleCount = 260;
+    const particleCount = 200;
     const positions = new Float32Array(particleCount * 3);
-    const colorPalette = [
-      new THREE.Color("#2563eb"),
-      new THREE.Color("#06b6d4"),
-      new THREE.Color("#8b5cf6"),
-    ];
+    // Restrained two-tone palette — mostly neutral, with a low ratio of
+    // accent-tinted points so the accent guides attention instead of
+    // competing for it. No rainbow confetti.
+    const neutral = new THREE.Color("#8890a0");
+    const accent = new THREE.Color("#5b8cff");
     const colors = new Float32Array(particleCount * 3);
 
     for (let i = 0; i < particleCount; i++) {
@@ -50,7 +50,7 @@ export function AnimatedBackground({ className }: { className?: string }) {
       positions[i * 3 + 1] = (Math.random() - 0.5) * 24;
       positions[i * 3 + 2] = (Math.random() - 0.5) * 20;
 
-      const color = colorPalette[i % colorPalette.length];
+      const color = i % 6 === 0 ? accent : neutral;
       colors[i * 3] = color.r;
       colors[i * 3 + 1] = color.g;
       colors[i * 3 + 2] = color.b;
@@ -61,10 +61,10 @@ export function AnimatedBackground({ className }: { className?: string }) {
     geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
 
     const material = new THREE.PointsMaterial({
-      size: 0.16,
+      size: 0.14,
       vertexColors: true,
       transparent: true,
-      opacity: 0.75,
+      opacity: 0.55,
       sizeAttenuation: true,
     });
 

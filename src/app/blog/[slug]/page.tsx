@@ -96,7 +96,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </div>
 
       {post.coverImage && (
-        <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">
+        <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-xl">
           <Image
             src={post.coverImage}
             alt=""

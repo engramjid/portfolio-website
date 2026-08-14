@@ -24,14 +24,22 @@ export function SectionHeading({
         className
       )}
     >
-      <span className="border-brand-primary/20 bg-brand-primary/5 text-brand-primary inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold tracking-wide uppercase">
-        {eyebrow}
-      </span>
-      <h2 className="mt-4 text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+      <div
+        className={cn(
+          "flex items-center gap-3",
+          align === "center" ? "justify-center" : "justify-start"
+        )}
+      >
+        <span className="bg-primary h-px w-6" aria-hidden="true" />
+        <span className="eyebrow">{eyebrow}</span>
+      </div>
+      <h2 className="mt-3 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
         {title}
       </h2>
       {description && (
-        <p className="text-muted-foreground mt-4 text-base text-balance">{description}</p>
+        <p className="text-muted-foreground mt-4 text-base leading-relaxed text-balance">
+          {description}
+        </p>
       )}
     </ScrollReveal>
   );

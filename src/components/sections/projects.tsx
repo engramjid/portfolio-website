@@ -133,8 +133,8 @@ function ProjectCard({ project }: { project: Project }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -12 }}
       transition={{ duration: 0.3 }}
-      whileHover={{ y: -6 }}
-      className="glass-panel group flex flex-col overflow-hidden rounded-2xl"
+      whileHover={{ y: -4 }}
+      className="glass-panel group hover:border-border flex flex-col overflow-hidden rounded-xl transition-colors"
     >
       <div className="relative aspect-video overflow-hidden">
         <Image
@@ -142,11 +142,11 @@ function ProjectCard({ project }: { project: Project }) {
           alt={`${project.title} preview`}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
         {project.featured && (
-          <span className="bg-brand-accent absolute top-3 right-3 inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold text-white">
-            <Sparkles className="size-3" />
+          <span className="border-border/60 bg-background/80 text-foreground absolute top-3 right-3 inline-flex items-center gap-1 rounded-md border px-2 py-1 text-[11px] font-medium backdrop-blur-sm">
+            <Sparkles className="text-primary size-3" />
             Featured
           </span>
         )}

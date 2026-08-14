@@ -16,7 +16,14 @@ import { useGithubData } from "@/hooks/use-github-data";
 import { siteConfig } from "@/constants/site";
 import { formatNumber } from "@/lib/utils";
 
-const CHART_COLORS = ["#2563EB", "#06B6D4", "#8B5CF6", "#22C55E", "#F59E0B", "#EC4899"];
+const CHART_COLORS = [
+  "var(--chart-1)",
+  "var(--chart-2)",
+  "var(--chart-3)",
+  "var(--chart-4)",
+  "var(--chart-5)",
+  "#7c7ff2",
+];
 
 export function GithubStats() {
   const { data, loading, error } = useGithubData(siteConfig.githubUsername);
@@ -31,7 +38,7 @@ export function GithubStats() {
         />
 
         {error && (
-          <div className="border-border mx-auto mt-12 flex max-w-md flex-col items-center gap-3 rounded-2xl border border-dashed p-8 text-center">
+          <div className="border-border mx-auto mt-12 flex max-w-md flex-col items-center gap-3 rounded-xl border border-dashed p-8 text-center">
             <AlertTriangle className="size-6 text-amber-500" />
             <p className="text-muted-foreground text-sm">{error}</p>
             <Button asChild variant="outline" size="sm">
@@ -186,7 +193,7 @@ export function GithubStats() {
             {loading || !data ? (
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {Array.from({ length: 6 }).map((_, i) => (
-                  <Skeleton key={i} className="h-32 w-full rounded-2xl" />
+                  <Skeleton key={i} className="h-32 w-full rounded-xl" />
                 ))}
               </div>
             ) : (
@@ -199,7 +206,7 @@ export function GithubStats() {
                       rel="noreferrer"
                       className="block h-full"
                     >
-                      <Card className="glass-panel h-full border-none transition-transform hover:-translate-y-1">
+                      <Card className="glass-panel hover:border-border h-full transition-all hover:-translate-y-1">
                         <CardContent className="flex h-full flex-col gap-2">
                           <div className="flex items-center justify-between gap-2">
                             <p className="truncate font-semibold">{repo.name}</p>

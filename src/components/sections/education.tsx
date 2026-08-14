@@ -29,7 +29,7 @@ export function Education() {
         <SectionHeading
           eyebrow="Education & Certifications"
           title="Formal training, kept current"
-          description="A graduate foundation in data science, kept sharp with cloud and platform certifications."
+          description="A graduate foundation in computer engineering, kept sharp with Power BI and platform certifications."
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">

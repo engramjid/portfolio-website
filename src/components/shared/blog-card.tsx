@@ -8,7 +8,7 @@ import type { BlogPostMeta } from "@/types";
 export function BlogCard({ post }: { post: BlogPostMeta }) {
   return (
     <Link href={`/blog/${post.slug}`} className="group block h-full">
-      <article className="glass-panel flex h-full flex-col overflow-hidden rounded-2xl transition-transform duration-300 group-hover:-translate-y-1">
+      <article className="glass-panel hover:border-border flex h-full flex-col overflow-hidden rounded-xl transition-all duration-300 group-hover:-translate-y-1">
         {post.coverImage && (
           <div className="relative aspect-[16/9] overflow-hidden">
             <Image

@@ -10,11 +10,11 @@ import { skillCategories } from "@/constants/skills";
 import type { SkillLevel } from "@/types";
 import { cn } from "@/lib/utils";
 
-const levelWidth: Record<SkillLevel, string> = {
-  foundational: "w-1/4",
-  proficient: "w-2/4",
-  advanced: "w-3/4",
-  expert: "w-full",
+const levelTier: Record<SkillLevel, number> = {
+  foundational: 1,
+  proficient: 2,
+  advanced: 3,
+  expert: 4,
 };
 
 const levelLabel: Record<SkillLevel, string> = {
@@ -40,7 +40,7 @@ export function Skills() {
               <TabsTrigger
                 key={category.id}
                 value={category.id}
-                className="border-border data-[state=active]:border-brand-primary data-[state=active]:bg-brand-primary/10 data-[state=active]:text-brand-primary rounded-full border bg-transparent px-4 py-2 text-sm"
+                className="border-border data-[state=active]:border-primary data-[state=active]:text-primary rounded-md border bg-transparent px-3.5 py-1.5 text-sm transition-colors"
               >
                 {category.title}
               </TabsTrigger>
@@ -69,42 +69,35 @@ export function Skills() {
 
 function SkillCard({ name, level }: { name: string; level: SkillLevel }) {
   const [hovered, setHovered] = React.useState(false);
+  const tier = levelTier[level];
 
   return (
     <motion.div
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      whileHover={{ y: -6, scale: 1.03 }}
+      whileHover={{ y: -3 }}
       transition={{ duration: 0.2 }}
       tabIndex={0}
       onFocus={() => setHovered(true)}
       onBlur={() => setHovered(false)}
-      className="glass-panel group focus-visible:ring-brand-primary/50 relative overflow-hidden rounded-xl px-4 py-5 text-center outline-none focus-visible:ring-2"
+      className="glass-panel hover:border-border focus-visible:ring-primary/40 relative flex flex-col items-center gap-2.5 rounded-lg px-4 py-5 text-center outline-none transition-colors focus-visible:ring-2"
     >
-      <div
-        className={cn(
-          "from-brand-primary/10 via-brand-secondary/10 to-brand-accent/10 pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300",
-          hovered && "opacity-100"
-        )}
-      />
-      <p className="text-sm font-semibold">{name}</p>
-      <div className="bg-muted mx-auto mt-3 h-1.5 w-full overflow-hidden rounded-full">
-        <motion.div
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          style={{ transformOrigin: "left" }}
-          className={cn(
-            "from-brand-primary via-brand-secondary to-brand-accent h-full rounded-full bg-gradient-to-r",
-            levelWidth[level]
-          )}
-        />
+      <p className="text-sm font-medium">{name}</p>
+      <div className="flex items-center gap-1" aria-hidden="true">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <span
+            key={i}
+            className={cn(
+              "h-1 w-3.5 rounded-full transition-colors",
+              i < tier ? "bg-primary" : "bg-muted"
+            )}
+          />
+        ))}
       </div>
       <motion.p
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: hovered ? 1 : 0, height: hovered ? "auto" : 0 }}
-        className="text-muted-foreground mt-2 text-[11px] font-medium"
+        className="text-muted-foreground text-[11px] font-medium"
       >
         {levelLabel[level]}
       </motion.p>

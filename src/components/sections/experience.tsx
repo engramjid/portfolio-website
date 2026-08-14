@@ -15,7 +15,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Where I've put this into practice"
-          description="Seven years across analytics, data engineering, and applied ML — each role building on the last."
+          description="8+ years across BI development, ERP integration, and healthcare IT — each role building on the last."
         />
 
         <div className="before:bg-border relative mt-16 space-y-10 before:absolute before:top-2 before:bottom-2 before:left-[19px] before:w-px sm:before:left-1/2">

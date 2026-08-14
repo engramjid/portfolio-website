@@ -13,10 +13,10 @@ export default function Icon() {
         alignItems: "center",
         justifyContent: "center",
         borderRadius: 8,
-        backgroundImage: "linear-gradient(135deg, #2563EB, #06B6D4, #8B5CF6)",
-        color: "#F8FAFC",
+        backgroundColor: "#0A0B0D",
+        color: "#5B8CFF",
         fontSize: 18,
-        fontWeight: 800,
+        fontWeight: 700,
         fontFamily: "sans-serif",
       }}
     >
