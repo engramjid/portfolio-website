@@ -99,16 +99,22 @@ export function AnimatedBackground({ className }: { className?: string }) {
     }
 
     const onResize = () => {
-      if (!container) return;
+      if (!container || container.clientWidth === 0 || container.clientHeight === 0) return;
       camera.aspect = container.clientWidth / container.clientHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(container.clientWidth, container.clientHeight);
     };
-    window.addEventListener("resize", onResize);
+    // A plain window "resize" listener misses cases where the container's
+    // own box changes without the window firing a resize event (e.g. the
+    // container settling into its final layout size after mount, or a
+    // programmatic viewport change) — ResizeObserver catches all of these
+    // and is what actually fixed the canvas getting stuck at a stale size.
+    const resizeObserver = new ResizeObserver(onResize);
+    resizeObserver.observe(container);
 
     return () => {
       cancelAnimationFrame(frameId);
-      window.removeEventListener("resize", onResize);
+      resizeObserver.disconnect();
       container.removeEventListener("pointermove", onPointerMove);
       geometry.dispose();
       material.dispose();
