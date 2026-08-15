@@ -70,6 +70,18 @@
       "categories": ["business-intelligence", "healthcare-it", "erp-integration"],
       "techStack": ["Power BI", "DAX", "SQL", "SAP ERP API", "Smartsheet API", "Power BI Service", "Star Schema"],
       "featured": true
+    },
+    {
+      "slug": "pharmacy-financial-kpi-dashboard",
+      "title": "Pharmacy Financial KPI Dashboard — Multi-Site Revenue & Profitability Tracking",
+      "description": "Live pharmacy financial dashboard tracking gross revenue, operating profit, and net income across 3 hospital sites — REST API integration, 4-hour refresh, and full interactive filtering.",
+      "problem": "Hospital pharmacy leadership required real-time financial visibility across 3 sites — tracking gross revenue, operating profit, and net income against monthly targets. Manual reporting cycles caused significant delays, meaning by the time financial results reached top management, the numbers were already outdated.",
+      "solution": "Built a comprehensive pharmacy financial KPI dashboard integrating live POS transaction data via REST API with Google Sheets target data in Power BI. The dashboard tracks gross revenue, operating profit, and net income with target vs. actual comparisons across all 3 sites. Key features include KPI cards showing gross revenue, operating profit, and net income — each with achievement percentage and actual vs. target ratio; monthly revenue trend with target line and actual expense overlay on hover; OPD and IPD revenue breakdown with target vs. actual donut charts; revenue by hospital site comparison; and full cross-filter interactivity across all visuals. A collapsible filter panel includes site selection and a custom date calendar with year, quarter, and month views, enabling leadership to compare performance across any time period. Deployed on Power BI Service with a dedicated app, 4-hour incremental refresh, and 5-year archived data.",
+      "impact": "Gross revenue target achieved at 100.02% (PKR 197.96M vs. PKR 197.91M target), with operating profit (PKR 62.44M, 31.54% of revenue) and net income (PKR 49.97M, 25.24% of revenue) tracked against targets across all 3 sites. OPD and IPD revenue are monitored separately with utilization percentages, and manual financial reporting cycles have been eliminated entirely — top management and pharmacy heads now access validated live financials instead of delayed manual reports.",
+      "image": "/images/projects/anomaly-detection.svg",
+      "categories": ["business-intelligence", "healthcare-it", "analytics"],
+      "techStack": ["Power BI", "DAX", "REST API", "Google Sheets", "Power BI Service", "Star Schema"],
+      "featured": true
     }
   ]
 }
