@@ -42,7 +42,7 @@
       "problem": "Multiple hospitals needed patient registration, billing reconciliation, appointment scheduling, and medical record workflows automated, alongside real-time visibility into clinical and operational performance.",
       "solution": "Led HMIS implementation across multiple hospitals and departments, and designed and deployed Power BI, Oracle APEX, and Jaspersoft dashboards for real-time insights. Gathered requirements from clinical and administrative stakeholders, translated them into functional specs, and ran UAT and validation.",
       "impact": "Reduced administrative manual effort by 30%, cut financial and operational reporting preparation time by 40%, and reduced reporting errors by 20% while improving data accuracy.",
-      "image": "/images/projects/support-nlp-router.svg",
+      "image": "/images/projects/hmis-implementation-1.png",
       "categories": ["healthcare-it", "data-engineering"],
       "techStack": ["Power BI", "Oracle APEX", "Jaspersoft", "HMIS"]
     },
