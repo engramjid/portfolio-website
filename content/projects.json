@@ -83,6 +83,19 @@
       "categories": ["business-intelligence", "healthcare-it", "analytics"],
       "techStack": ["Power BI", "DAX", "REST API", "Google Sheets", "Power BI Service", "Star Schema"],
       "featured": true
+    },
+    {
+      "slug": "healthcare-executive-analytics-dashboard",
+      "title": "Healthcare Executive Analytics Dashboard | KPI & Performance Insights",
+      "description": "Interactive healthcare executive analytics solution consolidating financial, patient, operational, and quality data into one management reporting experience, refreshed every 5 hours.",
+      "problem": "Hospital leadership relied on multiple disconnected departmental dashboards and reports, with no single consolidated executive view of real-time performance across financial, patient, operational, and quality metrics — creating fragmented insight and manual effort to piece together the full picture.",
+      "solution": "Designed an interactive healthcare executive analytics solution consolidating financial, patient, operational, and quality data into a unified management reporting experience, using Power BI, DAX, Power Query, and data modeling. Provides KPI monitoring, revenue and budget analysis, hospital comparison, department and consultant performance, patient-flow analysis, and quality and safety indicators — transforming operational data into actionable management insights. Refreshes every 5 hours, with 5 years of archived data and a 10-day incremental refresh window. The portfolio version uses anonymized/synthetic data to demonstrate the reporting approach while protecting confidential information.",
+      "impact": "Replaced multiple disconnected departmental dashboards and reports with a single real-time executive view, refreshed every 5 hours against 5 years of archived history. Leadership can compare hospital performance, analyze department and consultant productivity, monitor patient flow, and review quality and safety indicators from one consolidated source — turning operational data into decisions instead of manual report compilation.",
+      "image": "/images/projects/healthcare-executive-analytics-1.png",
+      "video": "/images/projects/healthcare-executive-analytics-demo.mp4",
+      "categories": ["business-intelligence", "healthcare-it", "analytics"],
+      "techStack": ["Power BI", "DAX", "Power Query", "Data Modeling", "Power BI Service"],
+      "featured": true
     }
   ]
 }
