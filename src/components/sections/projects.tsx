@@ -188,7 +188,6 @@ function ProjectCard({ project }: { project: Project }) {
                   poster={project.image}
                   controls
                   loop
-                  muted
                   playsInline
                   className="aspect-video w-full rounded-lg object-cover"
                 />
