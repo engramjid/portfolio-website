@@ -104,7 +104,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="relative mx-auto w-full max-w-sm"
         >
-          <div className="gradient-border relative aspect-square overflow-hidden rounded-3xl">
+          <div className="gradient-border relative aspect-[2/3] overflow-hidden rounded-3xl">
             <Image
               src="/images/ProfilePicOrig.png"
               alt={`Portrait of ${siteConfig.name}`}
