@@ -155,6 +155,7 @@ export default defineConfig({
                   "business-intelligence",
                   "healthcare-it",
                   "erp-integration",
+                  "data-engineering",
                   "analytics",
                 ],
               },

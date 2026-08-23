@@ -17,6 +17,7 @@ export type ProjectCategory =
   | "business-intelligence"
   | "healthcare-it"
   | "erp-integration"
+  | "data-engineering"
   | "analytics";
 
 export interface Project {
