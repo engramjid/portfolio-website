@@ -106,7 +106,7 @@ export function Hero() {
         >
           <div className="gradient-border relative aspect-square overflow-hidden rounded-3xl">
             <Image
-              src="/images/ProfilePicOrig1.png"
+              src="/images/ProfilePicOrig.png"
               alt={`Portrait of ${siteConfig.name}`}
               fill
               priority
