@@ -7,6 +7,5 @@ export const projectCategoryLabels: Record<string, string> = {
   "business-intelligence": "Business Intelligence",
   "healthcare-it": "Healthcare IT",
   "erp-integration": "ERP Integration",
-  "data-engineering": "Data Engineering",
   analytics: "Analytics",
 };

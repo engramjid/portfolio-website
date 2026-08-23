@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ExternalLink, Search, Sparkles } from "lucide-react";
 import { FiGithub as Github } from "react-icons/fi";
 
@@ -83,11 +83,9 @@ export function Projects() {
         </div>
 
         <motion.div layout className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <AnimatePresence mode="popLayout">
-            {filtered.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
-          </AnimatePresence>
+          {filtered.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
         </motion.div>
 
         {filtered.length === 0 && (
@@ -131,7 +129,6 @@ function ProjectCard({ project }: { project: Project }) {
       layout
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -12 }}
       transition={{ duration: 0.3 }}
       whileHover={{ y: -4 }}
       className="glass-panel group hover:border-border flex flex-col overflow-hidden rounded-xl transition-colors"
